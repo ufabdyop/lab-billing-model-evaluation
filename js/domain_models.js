@@ -195,10 +195,15 @@ var project = Backbone.Model.extend( {
 
 		var hours = cost.getHours();
 		var charge = hours * rate;
-		var charges_so_far = collector.by_month(cost.get('bdate').getYear() + 1900, cost.get('bdate').getMonth() + 1).by_project(this.get('name')).total();
+		//var charges_so_far = collector.by_month(cost.get('bdate').getYear() + 1900, cost.get('bdate').getMonth() + 1).by_project(this.get('name')).total();
+                var charges_so_far = collector.month_project_subtotal(
+                                                    cost.get('bdate').getYear() + 1900,
+                                                    cost.get('bdate').getMonth() + 1,
+                                                    this.get('name')
+                                                );
 
 		if (charges_so_far > cap) {
-			charge =  rate * hours * cap_reduction;
+			charge = rate * hours * cap_reduction;
 		} else if (charges_so_far + charge > cap) {
 			var full_charge_portion = (cap - charges_so_far) / rate / hours;
 			var discounted_charge_portion = 1 - full_charge_portion;
@@ -271,7 +276,7 @@ var batch_processor = Backbone.Model.extend({
 	    this.update_ui(0);
             //setTimeout to call this function again
             var that = this;  
-            window.setTimeout( function(){ that.run_batch(); } , this.get('batch_pause_interval'));   
+            window.setTimeout( function(){that.run_batch();} , this.get('batch_pause_interval'));   
         },
 	run_batch: function() {
 	    var i = this.get('batch_iterator');
@@ -288,7 +293,7 @@ var batch_processor = Backbone.Model.extend({
 	    if (i < the_data.length) {
 		//setTimeout to call this function again
 		var that = this;  
-		window.setTimeout( function(){ that.run_batch(); } , this.get('batch_pause_interval'));   
+		window.setTimeout( function(){that.run_batch();} , this.get('batch_pause_interval'));   
 	    } else {
                 this.restore_ui();
 		var complete_function = this.get('complete');
@@ -331,7 +336,67 @@ var batch_processor = Backbone.Model.extend({
  */
 var bill = Backbone.Collection.extend({
 	model: cost_activity,
-	total: function() {
+        initialize: function() {
+            this.subtotals = {
+                month: {},
+                project: {},
+                month_project: {}
+            };
+            this.total = 0;
+            this.on('add', this.compute_subtotals, this);
+        },
+        compute_subtotals: function(cost) {
+            var cost_bdate = new Date(cost.get('bdate'));
+            var cost_edate = new Date(cost.get('edate'));
+            var year = cost_bdate.getYear() + 1900 ;
+            var month = cost_bdate.getMonth() + 1;
+            var project = cost.get('lab_activity').get('project');
+            var charge = cost.get('charge');
+            
+            //month subtotal
+            var month_key = '' + year + ' ' + month;
+            this.add_subtotal_by_key(month_key, 'month', charge);
+
+            //project subtotal
+            this.add_subtotal_by_key(project, 'project', charge);
+
+            //month_project subtotal
+            var key = month_key + ' ' + project; 
+            this.add_subtotal_by_key(key, 'month_project', charge);
+            
+            this.total += charge;
+        },
+        add_subtotal_by_key: function(key, subtotal, charge) {
+            if (key in this.subtotals[subtotal]) {
+                this.subtotals[subtotal][key] += charge;
+            } else {
+                this.subtotals[subtotal][key] = charge;
+            }
+        },
+        total: function() {
+            return this.total;
+        },
+        get_subtotal: function(subtotal, key) {
+            if (subtotal in this.subtotals) {
+                if (key in this.subtotals[subtotal]) {
+                    return this.subtotals[subtotal][key];
+                }
+            }
+            return 0;
+        },
+        project_subtotal: function(project) {
+            return this.get_subtotal('project', project);
+        },
+        month_subtotal: function(year, month) {
+            var month_key = '' + year + ' ' + month;
+            return this.get_subtotal('month', month_key);
+        },
+        month_project_subtotal: function(year, month, project) {
+            var month_key = '' + year + ' ' + month;
+            var key = month_key + ' ' + project; 
+            return this.get_subtotal('month_project', key);
+        },
+	inefficient_total: function() {
 		var tally = 0;
 		this.each(function (cost) {
 			var charge = cost.get('charge');	
@@ -339,12 +404,12 @@ var bill = Backbone.Collection.extend({
 		});
 		return Math.round(tally*100)/100;
 	},
-	by_project: function(project) {
+	inefficient_by_project: function(project) {
 		return new bill(this.filter( function ( cost ) {
 			return cost.get('lab_activity').get('project') == project;
 		}));
 	},
-	by_month: function(year, month) {
+	inefficient_by_month: function(year, month) {
 		return new bill(this.filter( function ( cost ) {
 			var cost_bdate = new Date(cost.get('bdate'));
 			var cost_edate = new Date(cost.get('edate'));
@@ -387,8 +452,28 @@ var tier_catalog = Backbone.Collection.extend({
  */
 var project_catalog = Backbone.Collection.extend({
 		model: project,
+                indices: {},
+                initialize: function() {
+                    this.indices = {};
+                    this.on('add', this.create_index_for_name, this);
+                },
+                create_index_for_name: function(obj) {
+                    var indices = this.indices;
+                    var key = obj.get('name');
+                    if (key in indices) {
+                        
+                    } else {
+                        var i = this.indexOf(obj);
+                        indices[obj.get('name')] = i;
+                    }
+                },
 		find_by_name: function(name) {
-			return this.where({'name': name});
+                    var indices = this.indices;
+                    if (name in indices) {
+                        var i = indices[name];    
+                        return this.at(i);
+                    }
+                    return undefined;
 		}
 	});
 
@@ -528,7 +613,7 @@ var lab_activity_catalog = Backbone.Collection.extend({
             var month = this.attributes['data-month'];
             var year = this.attributes['data-year'];
             var markup = this.template({month: month + ', ' + year,
-                                        amount: this.model.by_month(year, month).total()
+                                        amount: this.model.month_subtotal(year, month)
                                     });
             this.$el.html(markup);
         }

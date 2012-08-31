@@ -38,7 +38,7 @@
         <script src="js/domain_models.js" type="text/javascript"></script>
         <script src="js/taxonomizer.js" type="text/javascript"></script>
         <script src="js/domain_objects.js" type="text/javascript"></script>
-        <script src="js/coral_enables.js" type="text/javascript"></script>
+        <script src="js/records/coral_enables.js" type="text/javascript"></script>
         
 	<script language="javascript">
             <?php
