@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tests</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/jquery-ui.min.js"></script>
+<script src="js/jquery.dataTables.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/qunit/qunit-1.9.0.js"></script>
+<script type="text/javascript" src="js/history.js"></script>
+<script type="text/javascript" src="js/totals.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/backbone.js"></script>
+<script type="text/javascript" src="js/taxonomizer.js"></script>
+<script type="text/javascript" src="js/domain_models.js"></script>
+<script type="text/javascript" src="js/domain_objects.js"></script>
+<style type="text/css">
+	@import "js/qunit/qunit-1.9.0.css";
+	@import "js/backbone.js";
+</style>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+ <script>
+     
+	global_restore_object = null;
+	my_lab_activity = null;
+	my_cost_activity = null;
+module( "domain_models", {
+  setup: function() {
+	//my_lab_activity = new lab_activity("ryant","DARPA", "local", "Denton Discovery 18" , "2012-08-01 11:00:00", "2012-08-01 13:00:00");	
+        shared_cap = new cap({threshold: 1, rate: 1 });
+	my_lab_activity = new lab_activity({
+						member: "ryant",
+						project: "DARPA", 
+						type: "local",
+						item: "Denton Discovery 18" ,
+						bdate: new Date("2012-08-01 11:00:00"), 
+						edate: new Date("2012-08-01 13:00:00")});	
+	my_cost_activity = new cost_activity({
+			lab_activity: my_lab_activity,
+			bdate: new Date("2012-08-01 12:00:00"),
+			edate: new Date("2012-08-01 12:30:00"),
+			charge: 50
+			});
+  }, teardown: function() {
+	//my_lab_activity = null;
+  }
+});
+    test( "lab activity should contain member, project, type, item, bdate, edate", function() {
+	equal(my_lab_activity.get('bdate').getTime(), new Date("2012-08-01 11:00:00").getTime(), "bdate should be set properly");
+	equal(my_lab_activity.get('edate').getTime(), new Date("2012-08-01 13:00:00").getTime(), "edate should be set properly");
+    });
+    test( "lab activity should compute amount of time automatically", function() {
+	equal(my_lab_activity.getHours(), 2, "Should be 2 hours from start to finish");
+    });
+    test( "cost activity should contain lab_activity, bdate, edate, charge", function() {
+		equal( my_cost_activity.get('lab_activity'), my_lab_activity);	
+	});
+    test( "Bills contain many cost activities", function() {
+		my_bill = new bill();
+		my_bill.add(my_cost_activity);
+		equal(my_bill.length, 1, "We should have added one activity to all the bills");
+	});
+    test( "Project creates cost activities", function() {
+		var my_project = new project({name: 'DARPA', type: 'local', cap: shared_cap});
+		my_bill = new bill();
+		my_project.set_bill_collector(my_bill);
+		my_project.set_toolset(all_items);
+		my_project.add_lab_activity(my_lab_activity);
+		equal( my_bill.length, 1, "Just added a lab activity to a project, that should have put an entry on my_bill");
+	});
+    test( "Cost activities can be tallied with a total function on a bill ", function () {
+		var my_bill = new bill();
+		my_cost_activity.set('charge', 25);
+		var cost_activity_2 = my_cost_activity.clone();
+		cost_activity_2.set('charge', 35);
+		my_bill.add(my_cost_activity);
+		my_bill.add(cost_activity_2);
+		equal(my_bill.total(), 60, "We should have added and totaled 2 cost_activities");
+	});
+    test( "Adding an activity to a project will add money to that bill", function () {
+		var my_project = new project({name: 'DARPA', type: 'local', cap: shared_cap});
+		my_bill = new bill();
+		my_project.set_bill_collector(my_bill);
+		my_project.set_toolset(all_items);
+		var an_activity = my_lab_activity.clone();
+		an_activity.set('item', 'myitem');
+		all_items.add(new item({name: 'myitem', rate: '100', tier: tier1}));
+
+		for( var i = 0; i < 5; i++) {
+			my_project.add_lab_activity(an_activity.clone());
+		}
+		equal( my_bill.total(), 1000, "I should have a bill for 1000 dollars");
+	});
+    test( "Adding a lab activity for project SPARPA does not show up in total DARPA", function () {
+		var my_project = new project({name: 'DARPA', type: 'local', cap: shared_cap});
+		my_bill = new bill();
+		my_project.set_bill_collector(my_bill);
+		my_project.set_toolset(all_items);
+		my_project.add_lab_activity(my_lab_activity.clone());
+		equal(my_bill.by_project('SPARPA').length, 0);
+	});
+    test( "Adding a lab activity for project DARPA shows up in total DARPA", function () {
+		var my_project = new project({name: 'DARPA', type: 'local', cap: shared_cap});
+		my_bill = new bill();
+		my_project.set_bill_collector(my_bill);
+		my_project.set_toolset(all_items);
+		my_project.add_lab_activity(my_lab_activity.clone());
+		equal(my_bill.by_project('DARPA').length, 1);
+	});
+    test( "Adding a lab activity in august 2012, shows up in total for august 2012", function () {
+		var my_project = new project({name: 'DARPA', type: 'local', cap: shared_cap});
+		my_bill = new bill();
+		my_project.set_bill_collector(my_bill);
+		my_project.set_toolset(all_items);
+		my_project.add_lab_activity(my_lab_activity.clone());
+		equal(my_bill.by_month(2012, 8).length, 1);
+	});
+    test( "Adding a lab activity in july 2012, does not show up in total for august 2012", function () {
+		var my_project = new project({name: 'DARPA', type: 'local', cap: shared_cap});
+		my_bill = new bill();
+		my_project.set_bill_collector(my_bill);
+		my_project.set_toolset(all_items);
+		my_project.add_lab_activity(my_lab_activity.clone());
+		equal(my_bill.by_month(2012, 7).length, 0);
+	});
+    test( "Setting a cap on a project limits the total charges on that project", function () {
+		var my_project = new project({name: 'DARPA', type: 'local', cap: shared_cap});
+		my_bill = new bill();
+		my_project.set_bill_collector(my_bill);
+		my_project.set_toolset(all_items);
+		my_project.get('cap').set('threshold', 1);
+		my_project.get('cap').set('rate', 0);
+		for( var i = 0; i < 5; i++) {
+			my_project.add_lab_activity(my_lab_activity.clone());
+		}
+		equal( my_bill.total(), 1, "I should have capped out.");
+	});
+    test( "Setting a cap rate on a project limits the total charges on that project", function () {
+		var my_project = new project({name: 'DARPA', type: 'local', cap: shared_cap});
+		my_bill = new bill();
+		my_project.set_bill_collector(my_bill);
+		my_project.set_toolset(all_items);
+		my_project.get('cap').set('threshold', 1);
+		my_project.get('cap').set('rate', 0.2);
+		var an_activity = my_lab_activity.clone();
+		an_activity.set('bdate', new Date('2012-08-05 12:00:00'));
+		an_activity.set('edate', new Date('2012-08-05 13:00:00'));
+		for( var i = 0; i < 6; i++) {
+			my_project.add_lab_activity(an_activity.clone());
+		}
+		equal( my_bill.total(), 2, "I should have a cap reduction.");
+	});
+    test( "If you add a lab_activity with to a project with no bill collector, it throws an exception", function () {
+		var my_project = new project({name: 'DARPA', type: 'local', cap: shared_cap});
+		tmp_activity = my_lab_activity.clone();
+		raises( function() {
+			my_project.add_lab_activity(tmp_activity);
+			} );
+	});
+    test( "If you add a lab_activity with no item to a project, it throws an exception", function () {
+		var my_project = new project({name: 'DARPA', type: 'local', cap: shared_cap});
+		my_bill = new bill();
+		my_project.set_bill_collector(my_bill);
+		tmp_activity = my_lab_activity.clone();
+		tmp_activity.set('item', null);
+		raises( function() {
+			my_project.add_lab_activity(tmp_activity);
+			} );
+	});
+    test( "A lab activity that straddles months is handled correctly", function () {
+		var my_project = new project({name: 'DARPA', type: 'local', cap: shared_cap});
+		my_bill = new bill();
+		my_project.set_bill_collector(my_bill);
+		my_project.set_toolset(all_items);
+		tmp_activity = my_lab_activity.clone();
+		tmp_activity.set('bdate', new Date(2012, 06, 31, 23, 00,00));
+		tmp_activity.set('edate', new Date(2012, 07, 1, 2, 00,00));
+		my_project.add_lab_activity(tmp_activity);
+		equal(my_bill.by_month(2012, 7).total(), 1);
+		equal(my_bill.by_month(2012, 8).total(), 2);
+	});
+    test( "A lab activity that straddles months is handled correctly", function () {
+	});
+
+
+  </script>
+        
+</body>
+</html>
