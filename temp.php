@@ -20,9 +20,6 @@ for ($i = 0; $i < count($objects); $i++) {
 		$obj->project_type = 'unknown';
 	}
 	
-	
-	
-	
 	$output[] = array('member' => $obj->firstname . ' ' . $obj->lastname,
 			'project' => $obj->project,
 			'type' => $obj->project_type,
