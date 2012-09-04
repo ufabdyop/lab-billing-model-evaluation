@@ -9,13 +9,10 @@
  */
 var lab_activity = Backbone.Model.extend({
 	defaults: {
-		member: null,
 		project: null,
-		type: null,
 		item: null,
-		bdate: null,
-		edate: null,
-		amount: null
+                month: null,
+                year: null
 	},
 	validate: function(attribs) {
 		if (attribs.bdate instanceof Date) {
@@ -133,7 +130,8 @@ var item = Backbone.Model.extend( {
 var tier = Backbone.Model.extend( {
 	defaults: {
 		"name": null,
-		"rate": null
+		"rate": null,
+                "external_rate": null
 	}});
 
 
@@ -180,10 +178,19 @@ var project = Backbone.Model.extend( {
 			throw new Error('Adding activity to wrong project');
 		}
 	},
+        is_external: function() {
+          var type = this.get('type');
+          if (type == 'off campus') {
+              return true;
+          }
+        },
 	calculate_cost: function (lab_activity) {
 		var cost = new cost_activity();
 		var item = this.get('toolset').find_by_name(lab_activity.get('item'));
-		var rate = item.get('rate');
+		var rate = item.get('tier').get('rate');
+                if (this.is_external()) {
+                    rate = item.get('tier').get('external_rate');
+                }
 		var collector = this.get('collector');
 		var cap = this.get('cap').get('threshold');
 		var cap_reduction = this.get('cap').get('rate');
@@ -195,7 +202,7 @@ var project = Backbone.Model.extend( {
 
 		var hours = cost.getHours();
 		var charge = hours * rate;
-		//var charges_so_far = collector.by_month(cost.get('bdate').getYear() + 1900, cost.get('bdate').getMonth() + 1).by_project(this.get('name')).total();
+                
                 var charges_so_far = collector.month_project_subtotal(
                                                     cost.get('bdate').getYear() + 1900,
                                                     cost.get('bdate').getMonth() + 1,
@@ -236,10 +243,12 @@ var batch_processor = Backbone.Model.extend({
                 templates: {
                     overlay: '<div id="batch_overlay_<%=id%>" style="display: block; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80);"></div>',
                     progress: '<div id="batch_progress_outer_<%=id%>" style="position: absolute; top: 10%; width: 100%; z-index: 1002">\n\
+                                <div id="batch_progress_info_<%=id%>" style="padding: 10px 10px 50px 10px; text-align: center; width: <%=width%>px; height: <%=height%>px; background-color: white; z-index: 1002; margin-left: auto; margin-right: auto;">Loading \n\
                                 <div id="batch_progress_container_<%=id%>" style="width: <%=width%>px; height: <%=height%>px; border: 1px solid #ccc; background-color: white; z-index: 1002; margin-left: auto; margin-right: auto;">\n\
-                                    <div id="batch_progress_<%=id%>" style="width: 0; background-color: <%=color%>; height: <%=height%>px">\n\
+                                    <div class="progress_bar" id="batch_progress_<%=id%>" style="width: 0; background-color: <%=color%>; height: <%=height%>px">\n\
                                     </div>\n\
                                 </div>\n\
+				</div>\
                                 </div>'
                 }
 	},
@@ -303,7 +312,7 @@ var batch_processor = Backbone.Model.extend({
         update_ui: function(i) {
             var progress_percentage = i * this.get('progress_multiplier') ;
             progress_percentage = progress_percentage.toPrecision(2);
-            $(this.get('progress').find('div div')).css('width', progress_percentage + '%');
+            $(this.get('progress').find('.progress_bar')).css('width', progress_percentage + '%');
         }, 
         restore_ui: function() {
             this.restore_html_dimensions();
@@ -337,40 +346,55 @@ var batch_processor = Backbone.Model.extend({
 var bill = Backbone.Collection.extend({
 	model: cost_activity,
         initialize: function() {
-            this.subtotals = {
-                month: {},
-                project: {},
-                month_project: {}
-            };
-            this.total = 0;
+            this.reset_totals();
             this.on('add', this.compute_subtotals, this);
+            this.on('reset', this.reset_totals, this);
+        },
+        reset_totals: function() {
+            this.subtotals = {
+                month: {tally: {}, name: 'Month', unit: 'Dollars'},
+                project: {tally: {}, name: 'Project', unit: 'Dollars'},
+                month_project: {tally: {}, name: 'Month and Project', unit: 'Dollars'},
+                month_project_item_hours: {tally: {}, name: 'Month, Project, Item', unit: 'Hours'}
+            };
+            this.total = 0;            
+        },
+        get_all_subtotals: function() {
+            
         },
         compute_subtotals: function(cost) {
             var cost_bdate = new Date(cost.get('bdate'));
             var cost_edate = new Date(cost.get('edate'));
             var year = cost_bdate.getYear() + 1900 ;
             var month = cost_bdate.getMonth() + 1;
-            var project = cost.get('lab_activity').get('project');
+            var lab_activity =  cost.get('lab_activity');
+            var project = lab_activity.get('project');
             var charge = cost.get('charge');
+            var item = lab_activity.get('item');
+            var hours = (cost_edate - cost_bdate) / (3600000)
             
             //month subtotal
-            var month_key = '' + year + ' ' + month;
+            var month_key = '' + month + ', ' + year;
             this.add_subtotal_by_key(month_key, 'month', charge);
 
             //project subtotal
             this.add_subtotal_by_key(project, 'project', charge);
 
             //month_project subtotal
-            var key = month_key + ' ' + project; 
+            var key = month_key + ': "' + project + '"'; 
             this.add_subtotal_by_key(key, 'month_project', charge);
+
+            //month_project_item_hours
+            var mpih_key = key + ': "' + item + '"';
+            this.add_subtotal_by_key(mpih_key, 'month_project_item_hours', hours);
             
             this.total += charge;
         },
         add_subtotal_by_key: function(key, subtotal, charge) {
-            if (key in this.subtotals[subtotal]) {
-                this.subtotals[subtotal][key] += charge;
+            if (key in this.subtotals[subtotal]['tally']) {
+                this.subtotals[subtotal]['tally'][key] += charge;
             } else {
-                this.subtotals[subtotal][key] = charge;
+                this.subtotals[subtotal]['tally'][key] = charge;
             }
         },
         total: function() {
@@ -388,12 +412,12 @@ var bill = Backbone.Collection.extend({
             return this.get_subtotal('project', project);
         },
         month_subtotal: function(year, month) {
-            var month_key = '' + year + ' ' + month;
+            var month_key = '' + month + ', ' + year;
             return this.get_subtotal('month', month_key);
         },
         month_project_subtotal: function(year, month, project) {
-            var month_key = '' + year + ' ' + month;
-            var key = month_key + ' ' + project; 
+            var month_key = '' + month + ', ' + year;
+            var key = month_key + ': "' + project + '"'; 
             return this.get_subtotal('month_project', key);
         },
 	inefficient_total: function() {
@@ -613,21 +637,54 @@ var lab_activity_catalog = Backbone.Collection.extend({
             var month = this.attributes['data-month'];
             var year = this.attributes['data-year'];
             var markup = this.template({month: month + ', ' + year,
-                                        amount: this.model.month_subtotal(year, month)
+                                        amount: this.model.month_subtotal(year, month).toFixed(2)
                                     });
+            this.$el.html(markup);
+        }
+    });
+    
+    var summary_view  = Backbone.View.extend({
+        model: bill,
+        tagName: 'table',
+        template: _.template('<tr><td colspan="2"><strong><%=title %></strong></td></tr>\n\
+                                <%=innards%>'),
+        entry_template: _.template('<tr><td><%=name%>:</td><td><%=value%></td></tr>'),
+        initialize: function() {
+          this.render();  
+        },
+        render: function() {
+            var markup = '' ;
+            for (subtotal in this.model.subtotals) {
+                var innards = '';
+                sub = this.model.subtotals[subtotal];
+                for (item in sub.tally) {
+                    var val;
+                    if (sub.unit == 'Dollars') {
+                        val = '$' + sub.tally[item].toFixed(2);
+                    } else {
+                        val = sub.tally[item].toFixed(2) + ' ' + sub.unit;
+                    }
+                    innards += this.entry_template({name: item, value: val });
+                }
+                markup += this.template({title: sub.name, innards: innards});
+            }
             this.$el.html(markup);
         }
     });
     
     var tier_view = Backbone.View.extend({
         model: tier,
-        tagName: 'label',
-        template: _.template('<%=name %> Rate<input type="text" value="<%=rate %>" />'),
+        tagName: 'div',
+        template: _.template('<label><%=name %> Rate<input name="rate" type="text" value="<%=rate %>" /></label>\
+                                <label><%=name %> External Rate<input name="external_rate" type="text" value="<%=external_rate %>" /></label>'),
         events: {
             "change input"      : "update_rate"
         },
         update_rate: function(obj) {
-            this.model.set('rate', this.$el.find('input').val() );
+            var external_rate = this.$el.find('input[name=external_rate]').val() ;
+            var rate = this.$el.find('input[name=rate]').val() ;
+            this.model.set('rate', rate );
+            this.model.set('external_rate', external_rate );
         },
         initialize: function(attributes) {
           $(attributes.selector).html(this.el);
@@ -635,7 +692,9 @@ var lab_activity_catalog = Backbone.Collection.extend({
             this.model.on('change', this.first_render, this);
         },
         first_render: function() {
-            this.$el.html(this.template({name: this.model.get('name'), rate: this.model.get('rate')}));
+            this.$el.html(this.template({name: this.model.get('name'),
+                                        rate: this.model.get('rate'),
+                                        external_rate: this.model.get('external_rate')}));
         }
     });
     

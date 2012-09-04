@@ -77,8 +77,8 @@ var Taxonomizer = function() {
 
         this.manual_assign = function(subject, category) {
             this.remove_subject(subject);
-            var category = this.get_category_ul(category);
-            category.append($('<li>' + subject + '</li>').draggable({ revert: true}));
+            var category_ul = this.get_category_ul(category);
+            category_ul.append($('<li>' + subject + '</li>').draggable({ revert: true}));
             this.notify_observer(subject, category);
         }
 };
