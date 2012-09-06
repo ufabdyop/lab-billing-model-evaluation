@@ -27,6 +27,17 @@
 			}
 			#enables thead th:first-child { border-left: 1px solid #AAA; }
 			#enables thead th:last-child { border-right: 1px solid #AAA; }
+                        ul#rules {
+                            list-style-type: circle;
+                            list-style-position: inside;
+                        }
+                        ul#rules li {
+                            padding-left: 20px;
+                        }
+                        #summary_tab_handle {
+                            display: none;
+                        }
+                        
 </style>
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />        
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
@@ -62,33 +73,49 @@
 </head>
 <body>
     <div class="sixteen columns">
-	<p>The formula we are using to calculate the charges for cost recovery for a single project for a given month is:<br/>
-	<p><strong>For tier 1 tools: </strong><img src="formula.png" alt="f(h) = \begin{cases} RH & \text{ if }RH < c\\ c + rh & \text{ if } RH \ge c \end{cases}"/> Where R is the Rate, H is the total number of hours of activity, r is the reduced rate that applies above the cap (R multiplied by the cap reduction), h is the number of hours that are billed above the cap.
-	<p>And analogously for tiers 2-4</p>
+        <h2>Billing Model Evaluations</h2>
+        <p>This page has a set of tools for examining different billing models for the Utah Nanofab.
+        The billing strategy that we have discussed so far is as follows:
+        <ul id="rules">
+            <li>Each tool in the nanofab can be placed into one of 4 tiers.</li>
+            <li>Each tier has an hourly rate for internal (University of Utah) projects and one rate for external projects.</li>
+            <li>At the end of the month, each project will be billed according to the number of hours that they used each tool 
+                (ie. [The total number of tier 1 tool hours multiplied by the tier 1 rate] + [The total number of tier 2 tool hours multiplied by the tier 2 rate]...)
+            </li>
+            <li>Reservations are billed at the same rate as tool usage, but where reservations and usage overlap, projects will not be double billed.</li>
+            <li>Optionally, a monthly cap can be used to reduce costs on University of Utah projects.  The cap can be configured such that once a project reaches the cap amount, additional charges are scaled by a percentage instead of just being dropped.</li>
+            <li>Any projects of type "staff" will not be billed.</li>
+        </ul>
+        </p>
     </div>
 	<div class="eleven columns">
 		<ul id="activity_tabs" class="tabs">
 			<li><a class="active" href="#config_tab">Configuration</a></li>
 			<li><a href="#tools_tab">Tool-Tier Assignment</a></li>
-			<li id="summary_tab_handle"><a href="#summary_tab">Summary Tab</a></li>
 			<li id="projects_tab_handle"><a href="#projects_tab">All Projects</a></li>
+			<li><a href="#activities_tab">All Activities</a></li>
+			<li id="summary_tab_handle"><a href="#summary_tab">Summary</a></li>
 		</ul>
 		<ul id="activity_tabs_content" class="tabs-content">
                     <li class="active" id="config_tab">
-                        <div id="collection" class="six columns">
-                    <form id="variables">
-                        <div id="tier1_rate"></div>
-                        <div id="tier2_rate"></div>
-                        <div id="tier3_rate"></div>
-                        <div id="tier4_rate"></div>
-                        <div id="cap_settings"></div>
+                        <div id="collection" class="eight columns">
+                        <form id="variables">
+                            <div class="three columns">
+                                <div id="tier1_rate"></div>
+                                <div id="tier2_rate"></div>
+                            </div>
+                            <div class="three columns">
+                                <div id="tier3_rate"></div>
+                                <div id="tier4_rate"></div>
+                            </div>
+                            <div id="cap_settings" class="six columns"></div>
                         </form> 
                         </div>
-                        
                     </li>
-			<li id="tools_tab"> <table id="reservations" class="display"></table></li>
-                        <li id="summary_tab">    <div id="summary"></div></li>
-                        <li id="projects_tab">    <div id="projects"></div></li>
+                    <li id="tools_tab"> <table id="reservations" class="display"></table></li>
+                    <li id="summary_tab">    <div id="summary"></div></li>
+                    <li id="projects_tab">    <table id="projects"></table></li>
+                    <li id="activities_tab">    <table id="activities"></table></li>
 		</ul>
 	</div>
                         <div id="report" class="three columns">

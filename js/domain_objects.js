@@ -35,6 +35,12 @@ function model_loading_complete() {
     setup_tool_tier_assignment_ui();
     setup_button_event_handlers();
     restore_if_asked();
+    fix_tabbing();
+}
+
+function fix_tabbing() {
+    var tabindex = 0;
+    $('input').each(function(index, input) { $(input).attr('tab-index', tabindex++); });
 }
 
 function setup_button_event_handlers() {
@@ -123,6 +129,7 @@ function setup_views() {
     my_cap_view = new cap_view({model: shared_cap, selector: '#cap_settings'});
     my_summary_view = new summary_view({model: my_bill, el: $('#summary')});
     my_projects_view = new projects_view({model: all_projects, el: $('#projects')});
+    my_activities_view = new lab_activity_view({model: all_lab_activities, el: $('#activities')});
 }
 
 function restore_if_asked() {

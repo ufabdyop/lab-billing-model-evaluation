@@ -512,7 +512,7 @@ var lab_activity_catalog = Backbone.Collection.extend({
     var projects_view = Backbone.View.extend({
         model: project_catalog,
         tagName: 'table',
-        template: _.template('<tr><td><%=name%></td><td><%=type%></td>'),
+        template: _.template('<tr><td><%=name%></td><td><%=type%></td></tr>'),
         initialize: function(attributes) {
           $(attributes.selector).html(this.el);
           this.model.on('add', this.render, this);
@@ -529,6 +529,30 @@ var lab_activity_catalog = Backbone.Collection.extend({
         }
     });
     
+    var lab_activity_view = Backbone.View.extend({
+        model: lab_activity_catalog,
+        tagName: 'table',
+        template: _.template('<tr><td><%=project%></td><td><%=month%></td><td><%=tool%></td><td><%=hours%></td></tr>'),
+        initialize: function(attributes) {
+          $(attributes.selector).html(this.el);
+          this.model.on('add', this.render, this);
+          this.model.on('reset', this.render, this);
+          this.render();  
+        },
+        render: function() {
+            var markup = '<thead><tr><th>Project</th><th>Month</th><th>Tool</th><th>Hours</th></tr></thead>';
+            this.model.each(function(activity) {
+                markup += this.template({project: activity.get('project').get('name'),
+                                        month: activity.get('year') + ' ' + activity.get('month'),
+                                        tool: activity.get('item').get('name'),
+                                        hours: activity.get('hours')
+                                    });
+            }, this);
+            this.$el.html('<tbody>' + markup + '</tbody>');
+            //this.$el.dataTable();
+        }
+    });
+    
     var summary_view  = Backbone.View.extend({
         model: bill,
         tagName: 'table',
@@ -540,10 +564,43 @@ var lab_activity_catalog = Backbone.Collection.extend({
         },
         render: function() {
             var markup = '' ;
-            for (subtotal in this.model.subtotals) {
+            for (var subtotal in this.model.subtotals) {
                 var innards = '';
-                sub = this.model.subtotals[subtotal];
-                for (item in sub.tally) {
+                var sub = this.model.subtotals[subtotal];
+                
+                var keys = [];
+                for (var item in sub.tally) {
+                    keys.push(item);
+                }
+                keys.sort(function(a,b) {
+                    if (a == b) {
+                        return 0;
+                    }
+                    var date_regex = /(\d\d?), (\d\d\d\d)/;
+                    if (date_regex.test(a) && date_regex.test(b)) {
+                        var a_month = date_regex.exec(a)[1];
+                        var a_year = date_regex.exec(a)[2];
+                        var b_month = date_regex.exec(b)[1];
+                        var b_year = date_regex.exec(b)[2];
+                        var a_date = new Date(a_month + '/' + '01' + '/' + a_year);
+                        var b_date = new Date(b_month + '/' + '01' + '/' + b_year);
+                        
+                        if (a_date.getTime() < b_date.getTime()) {
+                            return -1;
+                        } else {
+                            return 1;
+                        }
+                    } else {
+                        if (a < b) {
+                            return -1;
+                        } else {
+                            return 1;
+                        }
+                    }
+                });
+                
+                for (var key in keys) {
+                    var item = keys[key];
                     var val;
                     if (sub.unit == 'Dollars') {
                         val = '$' + sub.tally[item].toFixed(2);
