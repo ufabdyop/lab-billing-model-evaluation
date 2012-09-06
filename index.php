@@ -37,8 +37,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/jquery-ui.min.js"></script>
         <script src="js/domain_models.js" type="text/javascript"></script>
         <script src="js/taxonomizer.js" type="text/javascript"></script>
-        <script src="js/records/all_items.js" type="text/javascript"></script>
-        <script src="js/records/all_projects.js" type="text/javascript"></script>
         <script src="js/domain_objects.js" type="text/javascript"></script>
         <!-- <script src="js/records/all_billable_activities.js" type="text/javascript"></script> -->
         <!-- <script src="js/records/sample_of_activities.js" type="text/javascript"></script> -->
@@ -72,7 +70,6 @@
 		<ul id="activity_tabs" class="tabs">
 			<li><a class="active" href="#config_tab">Configuration</a></li>
 			<li><a href="#tools_tab">Tool-Tier Assignment</a></li>
-			<li><a href="#enables_tab">Chargeable Activities</a></li>
 			<li id="summary_tab_handle"><a href="#summary_tab">Summary Tab</a></li>
 		</ul>
 		<ul id="activity_tabs_content" class="tabs-content">
@@ -88,13 +85,6 @@
                         </div>
                         
                     </li>
-			<li id="enables_tab">        
-                            <div id="add_activities"></div>
-                            <div id="container">
-                                <div id="activities" class="display"></div>
-                                
-                            </div>
-                        </li>
 			<li id="tools_tab"> <table id="reservations" class="display"></table></li>
                         <li id="summary_tab">    <div id="summary"></div></li>
 		</ul>
