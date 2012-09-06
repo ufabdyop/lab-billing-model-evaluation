@@ -67,7 +67,8 @@ function setup_models_and_then_call_model_loading_complete() {
     function json_to_toolset(json_data) {
         $.each(json_data, function(key, tool) {
             console.log('adding to toolset: ' + tool.name);
-            all_items.add( new item({name: tool.name, tier: tier1}));
+            //all_items.add( new item({name: tool.name, tier: tier1}));
+            all_items.add( new item({name: tool.name}));
         });
     }
 
@@ -205,7 +206,10 @@ function setup_tool_tier_assignment_ui() {
         tool.set('tier', tier);
     });
     all_items.each(function(item) {
-       sorter.manual_assign(item.get('name'), item.get('tier').get('name')); 
+        var tier = item.get('tier');
+        if (tier) {
+            sorter.manual_assign(item.get('name'), item.get('tier').get('name'));    
+        }
     });
 }
 
