@@ -122,6 +122,7 @@ function setup_views() {
     my_tier4_view = new tier_view({model: tier4, selector: '#tier4_rate'});
     my_cap_view = new cap_view({model: shared_cap, selector: '#cap_settings'});
     my_summary_view = new summary_view({model: my_bill, el: $('#summary')});
+    my_projects_view = new projects_view({model: all_projects, el: $('#projects')});
 }
 
 function restore_if_asked() {

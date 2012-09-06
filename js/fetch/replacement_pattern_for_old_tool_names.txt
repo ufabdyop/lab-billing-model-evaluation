@@ -1,0 +1,23 @@
+ perl -i -pe 's!Allied precision polishing!Allied TECHPREP 10-1000!' old_system_reservations.php 
+ perl -i -pe 's!Annealing Furnace!Canary 2 Diff - Annl!' old_system_reservations.php 
+ perl -i -pe 's!Cambridge NanoTech ALD!Cambridge Fiji F200!' old_system_reservations.php 
+ perl -i -pe 's!CMP!Strasbaugh 6EC!' old_system_reservations.php 
+ perl -i -pe 's!Denton Discovery 18 Sputterer!Denton Discovery 18!' old_system_reservations.php 
+ perl -i -pe 's!Denton e-beam evaporator!Denton SJ20C!' old_system_reservations.php 
+ perl -i -pe 's!Digital Instruments AFM!AFM, Bruker Dimension Icon!' old_system_reservations.php 
+ perl -i -pe 's!Disco dicing saw!Disco DAD641!' old_system_reservations.php 
+ perl -i -pe 's!Electromask!Electromask CC250!' old_system_reservations.php 
+ perl -i -pe 's!EV 420!EV Aligner!' old_system_reservations.php 
+ perl -i -pe 's!FIB FEI!FIB, FEI Quanta 3D!' old_system_reservations.php 
+ perl -i -pe 's!EV Aligner!EV 420!' old_system_reservations.php 
+ perl -i -pe 's!Kratos XPS!XPS, Kratos Axis Ultra DLD!' old_system_reservations.php 
+ perl -i -pe 's!LAM Etcher Poly!Lam 590 Poly!' old_system_reservations.php 
+ perl -i -pe 's!LAM Etcher SO2..SiN!Lam 590 SiO2/SiN!' old_system_reservations.php 
+ perl -i -pe 's!Lindberg Metal Anneal!Lindberg Metal!' old_system_reservations.php 
+ perl -i -pe 's!Oxford 100 ICP DRIE!Oxford 100 ICP!' old_system_reservations.php 
+ perl -i -pe 's!Oxford Plasmalab 80 Plus!Oxford Plasmalab 80!' old_system_reservations.php 
+ perl -i -pe 's!Parylene Coater PDS 2010!SCS PDS 2010!' old_system_reservations.php 
+ perl -i -pe 's!SEM FEI Quanta!SEM, FEI Quanta 600 FEG!' old_system_reservations.php 
+ perl -i -pe 's!Suss MA 1006 Aligner!Suss MA1006!' old_system_reservations.php 
+ perl -i -pe 's!Tencor P-10 Profilometer!Profilometer Tencor P-10!' old_system_reservations.php 
+ perl -i -pe 's!TM-Vacuum Sputtering System!TMV Super!' old_system_reservations.php 

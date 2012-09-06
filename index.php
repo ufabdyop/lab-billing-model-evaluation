@@ -71,6 +71,7 @@
 			<li><a class="active" href="#config_tab">Configuration</a></li>
 			<li><a href="#tools_tab">Tool-Tier Assignment</a></li>
 			<li id="summary_tab_handle"><a href="#summary_tab">Summary Tab</a></li>
+			<li id="projects_tab_handle"><a href="#projects_tab">All Projects</a></li>
 		</ul>
 		<ul id="activity_tabs_content" class="tabs-content">
                     <li class="active" id="config_tab">
@@ -87,6 +88,7 @@
                     </li>
 			<li id="tools_tab"> <table id="reservations" class="display"></table></li>
                         <li id="summary_tab">    <div id="summary"></div></li>
+                        <li id="projects_tab">    <div id="projects"></div></li>
 		</ul>
 	</div>
                         <div id="report" class="three columns">

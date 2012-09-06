@@ -143,10 +143,11 @@ var batch_processor = Backbone.Model.extend({
                 color: '#acc',
                 progress_multiplier: 1,
                 batch_pause_interval: 50,
+                begin_timestamp: new Date(),
                 templates: {
                     overlay: '<div id="batch_overlay_<%=id%>" style="display: block; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80);"></div>',
                     progress: '<div id="batch_progress_outer_<%=id%>" style="position: absolute; top: <%=offsetY%>px; width: 100%; z-index: 1002">\n\
-                                <div id="batch_progress_info_<%=id%>" style="padding: 10px 10px 50px 10px; text-align: center; width: <%=width%>px; height: <%=height%>px; background-color: white; z-index: 1002; margin-left: auto; margin-right: auto;">Loading \n\
+                                <div id="batch_progress_info_<%=id%>" style="padding: 10px 10px 50px 10px; text-align: center; width: <%=width%>px; height: <%=height%>px; background-color: white; z-index: 1002; margin-left: auto; margin-right: auto;">Loading <span class="progress_count"> <%=count%></span> of <%=total%>\n\
                                 <div id="batch_progress_container_<%=id%>" style="width: <%=width%>px; height: <%=height%>px; border: 1px solid #ccc; background-color: white; z-index: 1002; margin-left: auto; margin-right: auto;">\n\
                                     <div class="progress_bar" id="batch_progress_<%=id%>" style="width: 0; background-color: <%=color%>; height: <%=height%>px">\n\
                                     </div>\n\
@@ -177,6 +178,8 @@ var batch_processor = Backbone.Model.extend({
                                                             width: this.get('width'),
                                                             height: this.get('height'),
                                                             offsetY: window.scrollY + 20,
+                                                            count: 0,
+                                                            total: this.get('data').length,
                                                             color: this.get('color')}));
             $('html').append(overlay);
             $('html').append(progress);
@@ -186,6 +189,7 @@ var batch_processor = Backbone.Model.extend({
         },
         run_batches: function() {
 	    this.set('batch_iterator', 0);
+            this.set('begin_timestamp', new Date());
 	    this.update_ui(0);
             //setTimeout to call this function again
             var that = this;  
@@ -217,11 +221,15 @@ var batch_processor = Backbone.Model.extend({
             var progress_percentage = i * this.get('progress_multiplier') ;
             progress_percentage = progress_percentage.toPrecision(2);
             $(this.get('progress').find('.progress_bar')).css('width', progress_percentage + '%');
+            $(this.get('progress').find('.progress_count')).html(i);
         }, 
         restore_ui: function() {
             this.restore_html_dimensions();
-            this.get('overlay').fadeOut('slow');
-            this.get('progress').fadeOut('slow');
+            var time_to_complete = (new Date() - this.get('begin_timestamp')) / 1000;
+            
+            $(this.get('progress').find('.progress_bar')).css('background-color', '#fff').html(' Finished in ' + time_to_complete + ' seconds.');
+            this.get('overlay').delay(5000).fadeOut('slow');
+            this.get('progress').delay(5000).fadeOut('slow');
         },
         save_html_dimensions: function() {
             this.set('original_width', $('html').width());
@@ -304,8 +312,8 @@ var bill = Backbone.Collection.extend({
         },
         get_subtotal: function(subtotal, key) {
             if (subtotal in this.subtotals) {
-                if (key in this.subtotals[subtotal]) {
-                    return this.subtotals[subtotal][key];
+                if (key in this.subtotals[subtotal]['tally']) {
+                    return this.subtotals[subtotal]['tally'][key];
                 }
             }
             return 0;
@@ -496,6 +504,27 @@ var lab_activity_catalog = Backbone.Collection.extend({
             var markup = this.template({month: month + ', ' + year,
                                         amount: this.model.month_subtotal(year, month).toFixed(2)
                                     });
+            this.$el.html(markup);
+        }
+    });
+    
+    
+    var projects_view = Backbone.View.extend({
+        model: project_catalog,
+        tagName: 'table',
+        template: _.template('<tr><td><%=name%></td><td><%=type%></td>'),
+        initialize: function(attributes) {
+          $(attributes.selector).html(this.el);
+          this.model.on('add', this.render, this);
+          this.model.on('reset', this.render, this);
+          this.render();  
+        },
+        render: function() {
+            var markup = '<tr><th>Project</th><th>Type</th></tr>';
+            this.model.each(function(project) {
+                markup += this.template({name: project.get('name'),
+                                        type: project.get('type') });
+            }, this);
             this.$el.html(markup);
         }
     });
