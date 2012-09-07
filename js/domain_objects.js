@@ -213,6 +213,28 @@ function setup_tool_tier_assignment_ui() {
             sorter.manual_assign(item.get('name'), item.get('tier').get('name'));    
         }
     });
+
+    //add checkboxes
+    $('li.ui-draggable').prepend('<input type="checkbox" name="selectme"/>')
+    var assignment_button = function(tier_name) {
+	    this.the_button = $('<input type="button" value="Assign to ' + tier_name + '" ></input>');
+	    this.the_button.css('cursor', 'click');
+	    this.the_button.click(function() {
+		$('input[name=selectme]').each(function(key, val) {
+			if ($(val).attr('checked')) {
+				sorter.manual_assign($(val).parent().text(), tier_name);
+			}
+		});
+	    });
+    }
+    var assign_button_1 = new assignment_button('Tier 1');
+    var assign_button_2 = new assignment_button('Tier 2');
+    var assign_button_3 = new assignment_button('Tier 3');
+    var assign_button_4 = new assignment_button('Tier 4');
+    $('.taxonomizer-categories').after(assign_button_1.the_button);
+    $('.taxonomizer-categories').after(assign_button_2.the_button);
+    $('.taxonomizer-categories').after(assign_button_3.the_button);
+    $('.taxonomizer-categories').after(assign_button_4.the_button);
 }
 
 function crunch_the_numbers(some_enables) {
