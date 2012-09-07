@@ -95,6 +95,7 @@
 			<li id="projects_tab_handle"><a href="#projects_tab">All Projects</a></li>
 			<li><a href="#activities_tab">All Activities</a></li>
 			<li id="summary_tab_handle"><a href="#summary_tab">Summary</a></li>
+			<li id="error_tab_handle"><a href="#error_tab">Errors</a></li>
 		</ul>
 		<ul id="activity_tabs_content" class="tabs-content">
                     <li class="active" id="config_tab">
@@ -113,9 +114,10 @@
                         </div>
                     </li>
                     <li id="tools_tab"> <table id="reservations" class="display"></table></li>
-                    <li id="summary_tab">    <div id="summary"></div></li>
+                    <li id="summary_tab">    <div class="eight columns" id="summary"></div></li>
                     <li id="projects_tab">    <table id="projects"></table></li>
                     <li id="activities_tab">    <table id="activities"></table></li>
+                    <li id="error_tab">    <ul id="errors"></ul></li>
 		</ul>
 	</div>
                         <div id="report" class="three columns">

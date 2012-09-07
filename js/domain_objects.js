@@ -62,6 +62,7 @@ function setup_models_and_then_call_model_loading_complete() {
 	obj.get('project').add_lab_activity(obj);
     });
     $.getJSON('js/records/combined_records.json', json_to_models);
+    my_error_log = new error_log();
 }
 
     function json_to_toolset(json_data) {
@@ -131,6 +132,7 @@ function setup_views() {
     my_summary_view = new summary_view({model: my_bill, el: $('#summary')});
     my_projects_view = new projects_view({model: all_projects, el: $('#projects')});
     my_activities_view = new lab_activity_view({model: all_lab_activities, el: $('#activities')});
+    my_error_log_view = new error_log_view({model: my_error_log, el: $('#errors')});
 }
 
 function restore_if_asked() {
@@ -230,6 +232,10 @@ function load_coral_enables() {
     var batch = new batch_processor({
         data: all_lab_activities.toArray(),
         process_function: crunch_the_numbers,
+        error_handler: function(msg) {
+		my_error_log.add(new error({message: msg}));
+		$('#error_tab_handle a').click().animate({color: 'white', "background-color": 'red'}, 1000).delay(3000).animate({color: '#333', "background-color": "#f5f5f5"}, 1000);
+	},
 	complete: function() {
 	    //turn bindings back on for views
 	    $(my_bill_calendar_view.month_views).each(function(key, val){val.model.on('add', val.render, val);});

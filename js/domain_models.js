@@ -38,6 +38,13 @@ var item = Backbone.Model.extend( {
     });
 
 /**
+ * An error
+ */
+var error = Backbone.Model.extend({
+			defaults: { message: "" }
+		});
+
+/**
  * A tier has a name and a rate
  */
 var tier = Backbone.Model.extend( {
@@ -93,7 +100,12 @@ var project = Backbone.Model.extend( {
 	calculate_cost: function (lab_activity) {
 		var cost = new cost_activity();
 		var item = lab_activity.get('item');
-		var rate = item.get('tier').get('rate');
+		var item_name = item.get('name');
+		var tier = item.get('tier');
+		if (tier == undefined) {
+			throw item_name + " has no tier assigned to it.";
+		}
+		var rate = tier.get('rate');
                 
                 if (this.is_external()) {
                     rate = item.get('tier').get('external_rate');
@@ -160,9 +172,9 @@ var batch_processor = Backbone.Model.extend({
             
         },      
 	go: function () {
-            this.calculate_multiplier();
-            this.setup_ui();
-            this.run_batches();
+		    this.calculate_multiplier();
+		    this.setup_ui();
+		    this.run_batches();
 	},
         calculate_multiplier: function() {
             this.set('progress_multiplier', 100 / this.get('data').length);
@@ -196,25 +208,31 @@ var batch_processor = Backbone.Model.extend({
             window.setTimeout( function(){that.run_batch();} , this.get('batch_pause_interval'));   
         },
 	run_batch: function() {
-	    var i = this.get('batch_iterator');
-	    var number_of_data_to_crunch = this.get('stepsize');
-	    var the_data = this.get('data'); 
-	    var the_function = this.get('process_function'); 
-	    if (i + number_of_data_to_crunch > the_data.length) {
-		number_of_data_to_crunch = the_data.length - i;
-	    }
-	    the_function(the_data.slice(i, i + number_of_data_to_crunch));
-            this.update_ui(i);
-	    i += this.get('stepsize');
-	    this.set('batch_iterator', i);
-	    if (i < the_data.length) {
-		//setTimeout to call this function again
-		var that = this;  
-		window.setTimeout( function(){that.run_batch();} , this.get('batch_pause_interval'));   
-	    } else {
-                this.restore_ui();
-		var complete_function = this.get('complete');
-		complete_function();
+	    try {
+		    var i = this.get('batch_iterator');
+		    var number_of_data_to_crunch = this.get('stepsize');
+		    var the_data = this.get('data'); 
+		    var the_function = this.get('process_function'); 
+		    if (i + number_of_data_to_crunch > the_data.length) {
+			number_of_data_to_crunch = the_data.length - i;
+		    }
+		    the_function(the_data.slice(i, i + number_of_data_to_crunch));
+		    this.update_ui(i);
+		    i += this.get('stepsize');
+		    this.set('batch_iterator', i);
+		    if (i < the_data.length) {
+			//setTimeout to call this function again
+			var that = this;  
+			window.setTimeout( function(){that.run_batch();} , this.get('batch_pause_interval'));   
+		    } else {
+			this.restore_ui();
+			var complete_function = this.get('complete');
+			complete_function();
+		    }
+	    } catch (message) {
+		    this.restore_ui();
+		    var error_handler = this.get('error_handler');
+		    error_handler(message);
 	    }
 	},
         update_ui: function(i) {
@@ -368,6 +386,12 @@ var tier_catalog = Backbone.Collection.extend({
 		model: tier
 	});
         
+/**
+ * error_log is a collection of error messages
+ */
+var error_log = Backbone.Collection.extend({
+		model: error
+	});
 
 /**
  * project_catalog is a collection of projects
@@ -663,7 +687,22 @@ var lab_activity_catalog = Backbone.Collection.extend({
         }
     });
     
-
-
-
-
+    var error_log_view = Backbone.View.extend({
+        model: error_log,
+        tagName: 'ul',
+        template: _.template('<li><%=message%></li>'),
+        initialize: function(attributes) {
+          $(attributes.selector).html(this.el);
+          this.first_render();  
+          this.model.on('change', this.first_render, this);
+          this.model.on('add', this.add_message, this);
+        },
+	add_message: function(err) {
+		var timestamp = new Date();
+		var formatted_timestamp = timestamp.getHours() + ':' + timestamp.getMinutes() + ':' + timestamp.getSeconds();
+            this.$el.append(this.template({message: formatted_timestamp + ' ' + err.get('message')}));
+	},
+        first_render: function() {
+        }
+    });
+    
