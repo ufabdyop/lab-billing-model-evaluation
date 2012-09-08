@@ -54,12 +54,12 @@ var Taxonomizer = function() {
         
         this.remove_subject = function(subject) {
             this.subjects_element.children().each(function() {
-                if ($(this).html() == subject) {
+                if ($(this).text() == subject) {
                    $(this).remove(); 
                 }
             });
             this.categories_element.find('li').each(function() {
-                if ($(this).html() == subject) {
+                if ($(this).text() == subject) {
                    $(this).remove(); 
                 }
             });

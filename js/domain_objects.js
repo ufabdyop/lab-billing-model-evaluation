@@ -231,10 +231,10 @@ function setup_tool_tier_assignment_ui() {
     var assign_button_2 = new assignment_button('Tier 2');
     var assign_button_3 = new assignment_button('Tier 3');
     var assign_button_4 = new assignment_button('Tier 4');
-    $('.taxonomizer-categories').after(assign_button_1.the_button);
-    $('.taxonomizer-categories').after(assign_button_2.the_button);
-    $('.taxonomizer-categories').after(assign_button_3.the_button);
-    $('.taxonomizer-categories').after(assign_button_4.the_button);
+    $('.taxonomizer-subjects').after(assign_button_4.the_button);
+    $('.taxonomizer-subjects').after(assign_button_3.the_button);
+    $('.taxonomizer-subjects').after(assign_button_2.the_button);
+    $('.taxonomizer-subjects').after(assign_button_1.the_button);
 }
 
 function crunch_the_numbers(some_enables) {
