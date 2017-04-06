@@ -1,0 +1,4134 @@
+object(stdClass)#2 (2) {
+  ["items"]=>
+  array(135) {
+    [0]=>
+    object(stdClass)#3 (1) {
+      ["name"]=>
+      string(28) "4-point Probe Microtech RF-1"
+    }
+    [1]=>
+    object(stdClass)#4 (1) {
+      ["name"]=>
+      string(19) "Acid Neutralization"
+    }
+    [2]=>
+    object(stdClass)#5 (1) {
+      ["name"]=>
+      string(26) "AFM, Bruker Dimension Icon"
+    }
+    [3]=>
+    object(stdClass)#6 (1) {
+      ["name"]=>
+      string(16) "Allied M-Prep3 1"
+    }
+    [4]=>
+    object(stdClass)#7 (1) {
+      ["name"]=>
+      string(16) "Allied M-Prep3 2"
+    }
+    [5]=>
+    object(stdClass)#8 (1) {
+      ["name"]=>
+      string(16) "Allied M-Prep3 3"
+    }
+    [6]=>
+    object(stdClass)#9 (1) {
+      ["name"]=>
+      string(15) "Allied Techcut4"
+    }
+    [7]=>
+    object(stdClass)#10 (1) {
+      ["name"]=>
+      string(23) "Allied TECHPREP 10-1000"
+    }
+    [8]=>
+    object(stdClass)#11 (1) {
+      ["name"]=>
+      string(9) "APT Polos"
+    }
+    [9]=>
+    object(stdClass)#12 (1) {
+      ["name"]=>
+      string(14) "Binder FD53-UL"
+    }
+    [10]=>
+    object(stdClass)#13 (1) {
+      ["name"]=>
+      string(6) "Blue-M"
+    }
+    [11]=>
+    object(stdClass)#14 (1) {
+      ["name"]=>
+      string(8) "Blue-M 1"
+    }
+    [12]=>
+    object(stdClass)#15 (1) {
+      ["name"]=>
+      string(8) "Blue-M 2"
+    }
+    [13]=>
+    object(stdClass)#16 (1) {
+      ["name"]=>
+      string(8) "Blue-M 3"
+    }
+    [14]=>
+    object(stdClass)#17 (1) {
+      ["name"]=>
+      string(8) "Blue-M 4"
+    }
+    [15]=>
+    object(stdClass)#18 (1) {
+      ["name"]=>
+      string(16) "Bold sn1974 Etch"
+    }
+    [16]=>
+    object(stdClass)#19 (1) {
+      ["name"]=>
+      string(16) "Bold sn1975 Etch"
+    }
+    [17]=>
+    object(stdClass)#20 (1) {
+      ["name"]=>
+      string(17) "Bold sn1976 Litho"
+    }
+    [18]=>
+    object(stdClass)#21 (1) {
+      ["name"]=>
+      string(17) "Bold Vent Deck SS"
+    }
+    [19]=>
+    object(stdClass)#22 (1) {
+      ["name"]=>
+      string(16) "CAD Work Station"
+    }
+    [20]=>
+    object(stdClass)#23 (1) {
+      ["name"]=>
+      string(19) "Cambridge Fiji F200"
+    }
+    [21]=>
+    object(stdClass)#24 (1) {
+      ["name"]=>
+      string(18) "Canary 1 Oxidation"
+    }
+    [22]=>
+    object(stdClass)#25 (1) {
+      ["name"]=>
+      string(20) "Canary 2 Diff - Annl"
+    }
+    [23]=>
+    object(stdClass)#26 (1) {
+      ["name"]=>
+      string(12) "Canary 3 SiN"
+    }
+    [24]=>
+    object(stdClass)#27 (1) {
+      ["name"]=>
+      string(16) "Canary 4 Poly-Si"
+    }
+    [25]=>
+    object(stdClass)#28 (1) {
+      ["name"]=>
+      string(3) "CDA"
+    }
+    [26]=>
+    object(stdClass)#29 (1) {
+      ["name"]=>
+      string(7) "CEE 100"
+    }
+    [27]=>
+    object(stdClass)#30 (1) {
+      ["name"]=>
+      string(10) "CHA SEL600"
+    }
+    [28]=>
+    object(stdClass)#31 (1) {
+      ["name"]=>
+      string(22) "Computer Work Stations"
+    }
+    [29]=>
+    object(stdClass)#32 (1) {
+      ["name"]=>
+      string(43) "Confocal Microscope, Olympus Fluoview FV10i"
+    }
+    [30]=>
+    object(stdClass)#33 (1) {
+      ["name"]=>
+      string(33) "Confocal Microscope, Olympus IX81"
+    }
+    [31]=>
+    object(stdClass)#34 (1) {
+      ["name"]=>
+      string(5) "Coral"
+    }
+    [32]=>
+    object(stdClass)#35 (1) {
+      ["name"]=>
+      string(29) "dbFIB, FEI Helios NanoLab 650"
+    }
+    [33]=>
+    object(stdClass)#36 (1) {
+      ["name"]=>
+      string(24) "dbFIB, FEI Quanta 3D-FEG"
+    }
+    [34]=>
+    object(stdClass)#37 (1) {
+      ["name"]=>
+      string(19) "Denton Discovery 18"
+    }
+    [35]=>
+    object(stdClass)#38 (1) {
+      ["name"]=>
+      string(12) "Denton SJ20C"
+    }
+    [36]=>
+    object(stdClass)#39 (1) {
+      ["name"]=>
+      string(27) "Diffusitron Mark IV 6 Stack"
+    }
+    [37]=>
+    object(stdClass)#40 (1) {
+      ["name"]=>
+      string(13) "Disco DAD3220"
+    }
+    [38]=>
+    object(stdClass)#41 (1) {
+      ["name"]=>
+      string(12) "Disco DAD641"
+    }
+    [39]=>
+    object(stdClass)#42 (1) {
+      ["name"]=>
+      string(8) "DI Water"
+    }
+    [40]=>
+    object(stdClass)#43 (1) {
+      ["name"]=>
+      string(11) "Door Access"
+    }
+    [41]=>
+    object(stdClass)#44 (1) {
+      ["name"]=>
+      string(13) "Edwards GRC 1"
+    }
+    [42]=>
+    object(stdClass)#45 (1) {
+      ["name"]=>
+      string(13) "Edwards GRC 2"
+    }
+    [43]=>
+    object(stdClass)#46 (1) {
+      ["name"]=>
+      string(17) "Electromask CC250"
+    }
+    [44]=>
+    object(stdClass)#47 (1) {
+      ["name"]=>
+      string(35) "Ellipsometer, Woollam Spectroscopic"
+    }
+    [45]=>
+    object(stdClass)#48 (1) {
+      ["name"]=>
+      string(25) "Ellipsometer Woollam VASE"
+    }
+    [46]=>
+    object(stdClass)#49 (1) {
+      ["name"]=>
+      string(10) "EMS 1000 1"
+    }
+    [47]=>
+    object(stdClass)#50 (1) {
+      ["name"]=>
+      string(10) "EMS 1000 2"
+    }
+    [48]=>
+    object(stdClass)#51 (1) {
+      ["name"]=>
+      string(10) "EMS 1000 3"
+    }
+    [49]=>
+    object(stdClass)#52 (1) {
+      ["name"]=>
+      string(6) "EV 420"
+    }
+    [50]=>
+    object(stdClass)#53 (1) {
+      ["name"]=>
+      string(10) "EVG 520 IS"
+    }
+    [51]=>
+    object(stdClass)#54 (1) {
+      ["name"]=>
+      string(7) "Exhaust"
+    }
+    [52]=>
+    object(stdClass)#55 (1) {
+      ["name"]=>
+      string(28) "Expertech CTR-125 Doped Poly"
+    }
+    [53]=>
+    object(stdClass)#56 (1) {
+      ["name"]=>
+      string(21) "Expertech CTR-125 LTO"
+    }
+    [54]=>
+    object(stdClass)#57 (1) {
+      ["name"]=>
+      string(21) "Expertech CTR-125 SiN"
+    }
+    [55]=>
+    object(stdClass)#58 (1) {
+      ["name"]=>
+      string(22) "Expertech CTR-125 TEOS"
+    }
+    [56]=>
+    object(stdClass)#59 (1) {
+      ["name"]=>
+      string(17) "Eye Wash stations"
+    }
+    [57]=>
+    object(stdClass)#60 (1) {
+      ["name"]=>
+      string(18) "FIB, FEI Quanta 3D"
+    }
+    [58]=>
+    object(stdClass)#61 (1) {
+      ["name"]=>
+      string(27) "Film Stress Tencor FLX-2320"
+    }
+    [59]=>
+    object(stdClass)#62 (1) {
+      ["name"]=>
+      string(11) "Fume Hood 1"
+    }
+    [60]=>
+    object(stdClass)#63 (1) {
+      ["name"]=>
+      string(11) "Fume Hood 2"
+    }
+    [61]=>
+    object(stdClass)#64 (1) {
+      ["name"]=>
+      string(21) "Gaertner Ellipsometer"
+    }
+    [62]=>
+    object(stdClass)#65 (1) {
+      ["name"]=>
+      string(17) "Guardian Burn Box"
+    }
+    [63]=>
+    object(stdClass)#66 (1) {
+      ["name"]=>
+      string(13) "Headway EC101"
+    }
+    [64]=>
+    object(stdClass)#67 (1) {
+      ["name"]=>
+      string(22) "Heidelberg MicroPG 101"
+    }
+    [65]=>
+    object(stdClass)#68 (1) {
+      ["name"]=>
+      string(8) "House N2"
+    }
+    [66]=>
+    object(stdClass)#69 (1) {
+      ["name"]=>
+      string(12) "House Vacuum"
+    }
+    [67]=>
+    object(stdClass)#70 (1) {
+      ["name"]=>
+      string(8) "HP 4145A"
+    }
+    [68]=>
+    object(stdClass)#71 (1) {
+      ["name"]=>
+      string(4) "HVAC"
+    }
+    [69]=>
+    object(stdClass)#72 (1) {
+      ["name"]=>
+      string(17) "Keithley 4200 SCS"
+    }
+    [70]=>
+    object(stdClass)#73 (1) {
+      ["name"]=>
+      string(18) "Keithley CV System"
+    }
+    [71]=>
+    object(stdClass)#74 (1) {
+      ["name"]=>
+      string(3) "KOH"
+    }
+    [72]=>
+    object(stdClass)#75 (1) {
+      ["name"]=>
+      string(12) "Lam 590 Poly"
+    }
+    [73]=>
+    object(stdClass)#76 (1) {
+      ["name"]=>
+      string(16) "Lam 590 SiO2/SiN"
+    }
+    [74]=>
+    object(stdClass)#77 (1) {
+      ["name"]=>
+      string(22) "Laser Mark 4000 Nd-YAG"
+    }
+    [75]=>
+    object(stdClass)#78 (1) {
+      ["name"]=>
+      string(29) "Leak Detector Alcatel ASM 180"
+    }
+    [76]=>
+    object(stdClass)#79 (1) {
+      ["name"]=>
+      string(8) "Lighting"
+    }
+    [77]=>
+    object(stdClass)#80 (1) {
+      ["name"]=>
+      string(14) "Lindberg Metal"
+    }
+    [78]=>
+    object(stdClass)#81 (1) {
+      ["name"]=>
+      string(20) "Lindberg Metal Oxide"
+    }
+    [79]=>
+    object(stdClass)#82 (1) {
+      ["name"]=>
+      string(22) "Lindberg Miscellaneous"
+    }
+    [80]=>
+    object(stdClass)#83 (1) {
+      ["name"]=>
+      string(9) "MEI Wedge"
+    }
+    [81]=>
+    object(stdClass)#84 (1) {
+      ["name"]=>
+      string(23) "Microscope, Polyvar MET"
+    }
+    [82]=>
+    object(stdClass)#85 (1) {
+      ["name"]=>
+      string(29) "Mitutoyo Dial Indicator Probe"
+    }
+    [83]=>
+    object(stdClass)#86 (1) {
+      ["name"]=>
+      string(28) "MST Hazardous Gas Monitoring"
+    }
+    [84]=>
+    object(stdClass)#87 (1) {
+      ["name"]=>
+      string(21) "N and K 1500 Analyzer"
+    }
+    [85]=>
+    object(stdClass)#88 (1) {
+      ["name"]=>
+      string(13) "Nanospec 3000"
+    }
+    [86]=>
+    object(stdClass)#89 (1) {
+      ["name"]=>
+      string(16) "Nikon Optiphot 1"
+    }
+    [87]=>
+    object(stdClass)#90 (1) {
+      ["name"]=>
+      string(16) "Nikon Optiphot 2"
+    }
+    [88]=>
+    object(stdClass)#91 (1) {
+      ["name"]=>
+      string(10) "Nikon V12A"
+    }
+    [89]=>
+    object(stdClass)#92 (1) {
+      ["name"]=>
+      string(9) "OAI 200 1"
+    }
+    [90]=>
+    object(stdClass)#93 (1) {
+      ["name"]=>
+      string(9) "OAI 200 2"
+    }
+    [91]=>
+    object(stdClass)#94 (1) {
+      ["name"]=>
+      string(12) "Olympus MX51"
+    }
+    [92]=>
+    object(stdClass)#95 (1) {
+      ["name"]=>
+      string(21) "Optec Micromaster KrF"
+    }
+    [93]=>
+    object(stdClass)#96 (1) {
+      ["name"]=>
+      string(30) "Optical Profiler, Zygo NewView"
+    }
+    [94]=>
+    object(stdClass)#97 (1) {
+      ["name"]=>
+      string(33) "Oscilloscope Tektronix TDS 2002 B"
+    }
+    [95]=>
+    object(stdClass)#98 (1) {
+      ["name"]=>
+      string(14) "Oxford 100 ICP"
+    }
+    [96]=>
+    object(stdClass)#99 (1) {
+      ["name"]=>
+      string(19) "Oxford Plasmalab 80"
+    }
+    [97]=>
+    object(stdClass)#100 (1) {
+      ["name"]=>
+      string(25) "Oxford Plasmalab 80 PECVD"
+    }
+    [98]=>
+    object(stdClass)#101 (1) {
+      ["name"]=>
+      string(17) "Perkin-Elmer 4400"
+    }
+    [99]=>
+    object(stdClass)#102 (1) {
+      ["name"]=>
+      string(12) "Pirani Gauge"
+    }
+    [100]=>
+    object(stdClass)#103 (1) {
+      ["name"]=>
+      string(5) "PR8 1"
+    }
+    [101]=>
+    object(stdClass)#104 (1) {
+      ["name"]=>
+      string(5) "PR8 2"
+    }
+    [102]=>
+    object(stdClass)#105 (1) {
+      ["name"]=>
+      string(5) "PR8 3"
+    }
+    [103]=>
+    object(stdClass)#106 (1) {
+      ["name"]=>
+      string(5) "PR8 4"
+    }
+    [104]=>
+    object(stdClass)#107 (1) {
+      ["name"]=>
+      string(15) "Process Cooling"
+    }
+    [105]=>
+    object(stdClass)#108 (1) {
+      ["name"]=>
+      string(24) "Profilometer Tencor P-10"
+    }
+    [106]=>
+    object(stdClass)#109 (1) {
+      ["name"]=>
+      string(24) "Profilometer, Tencor P20"
+    }
+    [107]=>
+    object(stdClass)#110 (1) {
+      ["name"]=>
+      string(25) "Profilometer Tencor P-20H"
+    }
+    [108]=>
+    object(stdClass)#111 (1) {
+      ["name"]=>
+      string(21) "RGA Spectra Vac-Check"
+    }
+    [109]=>
+    object(stdClass)#112 (1) {
+      ["name"]=>
+      string(12) "SCS PDS 2010"
+    }
+    [110]=>
+    object(stdClass)#113 (1) {
+      ["name"]=>
+      string(23) "SEM, FEI Quanta 600 FEG"
+    }
+    [111]=>
+    object(stdClass)#114 (1) {
+      ["name"]=>
+      string(19) "SEM, Hitachi S-4800"
+    }
+    [112]=>
+    object(stdClass)#115 (1) {
+      ["name"]=>
+      string(15) "Semitool ST-260"
+    }
+    [113]=>
+    object(stdClass)#116 (1) {
+      ["name"]=>
+      string(15) "Semitool ST-870"
+    }
+    [114]=>
+    object(stdClass)#117 (1) {
+      ["name"]=>
+      string(7) "Showers"
+    }
+    [115]=>
+    object(stdClass)#118 (1) {
+      ["name"]=>
+      string(11) "SiC Chamber"
+    }
+    [116]=>
+    object(stdClass)#119 (1) {
+      ["name"]=>
+      string(16) "Solitec 5100 LVT"
+    }
+    [117]=>
+    object(stdClass)#120 (1) {
+      ["name"]=>
+      string(16) "Solitec 5110 CND"
+    }
+    [118]=>
+    object(stdClass)#121 (1) {
+      ["name"]=>
+      string(14) "Solvent Hood 1"
+    }
+    [119]=>
+    object(stdClass)#122 (1) {
+      ["name"]=>
+      string(14) "Solvent Hood 2"
+    }
+    [120]=>
+    object(stdClass)#123 (1) {
+      ["name"]=>
+      string(10) "Strasbaugh"
+    }
+    [121]=>
+    object(stdClass)#124 (1) {
+      ["name"]=>
+      string(14) "Strasbaugh 6EC"
+    }
+    [122]=>
+    object(stdClass)#125 (1) {
+      ["name"]=>
+      string(11) "Suss MA1006"
+    }
+    [123]=>
+    object(stdClass)#126 (1) {
+      ["name"]=>
+      string(16) "Technics PE II-A"
+    }
+    [124]=>
+    object(stdClass)#127 (1) {
+      ["name"]=>
+      string(9) "TMV Super"
+    }
+    [125]=>
+    object(stdClass)#128 (1) {
+      ["name"]=>
+      string(24) "UTI Wirebond Pull Tester"
+    }
+    [126]=>
+    object(stdClass)#129 (1) {
+      ["name"]=>
+      string(26) "UV Intensity Meter OAI 306"
+    }
+    [127]=>
+    object(stdClass)#130 (1) {
+      ["name"]=>
+      string(26) "UV Intensity Meter OAI 357"
+    }
+    [128]=>
+    object(stdClass)#131 (1) {
+      ["name"]=>
+      string(24) "UV Tape Release UVM-102W"
+    }
+    [129]=>
+    object(stdClass)#132 (1) {
+      ["name"]=>
+      string(4) "Wifi"
+    }
+    [130]=>
+    object(stdClass)#133 (1) {
+      ["name"]=>
+      string(14) "XACTIX X2 XeF2"
+    }
+    [131]=>
+    object(stdClass)#134 (1) {
+      ["name"]=>
+      string(26) "XPS, Kratos Axis Ultra DLD"
+    }
+    [132]=>
+    object(stdClass)#135 (1) {
+      ["name"]=>
+      string(24) "XRF, Eagle III Microspot"
+    }
+    [133]=>
+    object(stdClass)#136 (1) {
+      ["name"]=>
+      string(9) "YES HMDS1"
+    }
+    [134]=>
+    object(stdClass)#137 (1) {
+      ["name"]=>
+      string(10) "YES LP-III"
+    }
+  }
+  ["projects"]=>
+  array(493) {
+    [0]=>
+    object(stdClass)#138 (2) {
+      ["name"]=>
+      string(22) "2007 Fall Microsensors"
+      ["type"]=>
+      string(0) ""
+    }
+    [1]=>
+    object(stdClass)#139 (2) {
+      ["name"]=>
+      string(25) "2010 ECE6232 Microsensors"
+      ["type"]=>
+      string(5) "local"
+    }
+    [2]=>
+    object(stdClass)#140 (2) {
+      ["name"]=>
+      string(30) "2010 Fall- ECE 5202 Integrated"
+      ["type"]=>
+      string(0) ""
+    }
+    [3]=>
+    object(stdClass)#141 (2) {
+      ["name"]=>
+      string(30) "2010 Fall- ECE 6231 Microsenso"
+      ["type"]=>
+      string(0) ""
+    }
+    [4]=>
+    object(stdClass)#142 (2) {
+      ["name"]=>
+      string(30) "2010 Fall- ME 5960 Microfluidi"
+      ["type"]=>
+      string(0) ""
+    }
+    [5]=>
+    object(stdClass)#143 (2) {
+      ["name"]=>
+      string(30) "2010 Fall- MSE 5074 Solar Cell"
+      ["type"]=>
+      string(5) "class"
+    }
+    [6]=>
+    object(stdClass)#144 (2) {
+      ["name"]=>
+      string(30) "2011 Fall- ECE 5202 Integrated"
+      ["type"]=>
+      string(5) "class"
+    }
+    [7]=>
+    object(stdClass)#145 (2) {
+      ["name"]=>
+      string(30) "2011 Fall- ME 5960 Microfluidi"
+      ["type"]=>
+      string(5) "class"
+    }
+    [8]=>
+    object(stdClass)#146 (2) {
+      ["name"]=>
+      string(30) "2011 Fall MEEN 2960 Foundation"
+      ["type"]=>
+      string(5) "class"
+    }
+    [9]=>
+    object(stdClass)#147 (2) {
+      ["name"]=>
+      string(30) "2011 Fall-Microsensors and Act"
+      ["type"]=>
+      string(5) "class"
+    }
+    [10]=>
+    object(stdClass)#148 (2) {
+      ["name"]=>
+      string(30) "2011 Fall- MSE 5074 Solar Cell"
+      ["type"]=>
+      string(5) "class"
+    }
+    [11]=>
+    object(stdClass)#149 (2) {
+      ["name"]=>
+      string(28) "2011 Spring - Microactuators"
+      ["type"]=>
+      string(5) "class"
+    }
+    [12]=>
+    object(stdClass)#150 (2) {
+      ["name"]=>
+      string(30) "2011 Spring - Micromachining E"
+      ["type"]=>
+      string(5) "class"
+    }
+    [13]=>
+    object(stdClass)#151 (2) {
+      ["name"]=>
+      string(35) "2012 Fall-MSE 5074 Solar Cell Class"
+      ["type"]=>
+      string(0) ""
+    }
+    [14]=>
+    object(stdClass)#152 (2) {
+      ["name"]=>
+      string(19) "2012 Microactuators"
+      ["type"]=>
+      string(5) "class"
+    }
+    [15]=>
+    object(stdClass)#153 (2) {
+      ["name"]=>
+      string(22) "2012 Spring ME EN 2960"
+      ["type"]=>
+      string(5) "class"
+    }
+    [16]=>
+    object(stdClass)#154 (2) {
+      ["name"]=>
+      string(26) "2012 Spring Micromachining"
+      ["type"]=>
+      string(5) "class"
+    }
+    [17]=>
+    object(stdClass)#155 (2) {
+      ["name"]=>
+      string(20) "2D Photonic Crystals"
+      ["type"]=>
+      string(0) ""
+    }
+    [18]=>
+    object(stdClass)#156 (2) {
+      ["name"]=>
+      string(13) "3D Microarray"
+      ["type"]=>
+      string(0) ""
+    }
+    [19]=>
+    object(stdClass)#157 (2) {
+      ["name"]=>
+      string(4) "5212"
+      ["type"]=>
+      string(0) ""
+    }
+    [20]=>
+    object(stdClass)#158 (2) {
+      ["name"]=>
+      string(28) "6225 Microsystems- Fall 2004"
+      ["type"]=>
+      string(0) ""
+    }
+    [21]=>
+    object(stdClass)#159 (2) {
+      ["name"]=>
+      string(23) "6423 Biological Spotter"
+      ["type"]=>
+      string(0) ""
+    }
+    [22]=>
+    object(stdClass)#160 (2) {
+      ["name"]=>
+      string(10) "aBeam Tech"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [23]=>
+    object(stdClass)#161 (2) {
+      ["name"]=>
+      string(24) "ACH Antibodies BioSensor"
+      ["type"]=>
+      string(0) ""
+    }
+    [24]=>
+    object(stdClass)#162 (2) {
+      ["name"]=>
+      string(30) "Actuators: Refreshable Braille"
+      ["type"]=>
+      string(0) ""
+    }
+    [25]=>
+    object(stdClass)#163 (2) {
+      ["name"]=>
+      string(25) "Aging Wire Network Sensor"
+      ["type"]=>
+      string(0) ""
+    }
+    [26]=>
+    object(stdClass)#164 (2) {
+      ["name"]=>
+      string(18) "AK Balaji Start Up"
+      ["type"]=>
+      string(5) "local"
+    }
+    [27]=>
+    object(stdClass)#165 (2) {
+      ["name"]=>
+      string(15) "Alumina Coating"
+      ["type"]=>
+      string(0) ""
+    }
+    [28]=>
+    object(stdClass)#166 (2) {
+      ["name"]=>
+      string(18) "Alumina Thin Films"
+      ["type"]=>
+      string(0) ""
+    }
+    [29]=>
+    object(stdClass)#167 (2) {
+      ["name"]=>
+      string(30) "Aluminum 7075: Friction in Mac"
+      ["type"]=>
+      string(0) ""
+    }
+    [30]=>
+    object(stdClass)#168 (2) {
+      ["name"]=>
+      string(7) "AMEDICA"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [31]=>
+    object(stdClass)#169 (2) {
+      ["name"]=>
+      string(22) "Ameel Research Support"
+      ["type"]=>
+      string(0) ""
+    }
+    [32]=>
+    object(stdClass)#170 (2) {
+      ["name"]=>
+      string(23) "An Efficient Solar Cell"
+      ["type"]=>
+      string(0) ""
+    }
+    [33]=>
+    object(stdClass)#171 (2) {
+      ["name"]=>
+      string(30) "ARO: Enhanced Nonlinear Optica"
+      ["type"]=>
+      string(0) ""
+    }
+    [34]=>
+    object(stdClass)#172 (2) {
+      ["name"]=>
+      string(29) "ARRA: Wireless Neural Interfa"
+      ["type"]=>
+      string(0) ""
+    }
+    [35]=>
+    object(stdClass)#173 (2) {
+      ["name"]=>
+      string(30) "ARRA:  Wireless Neural Interfa"
+      ["type"]=>
+      string(5) "local"
+    }
+    [36]=>
+    object(stdClass)#174 (2) {
+      ["name"]=>
+      string(21) "Balaji Start-Up Funds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [37]=>
+    object(stdClass)#175 (2) {
+      ["name"]=>
+      string(22) "Bamberg Start-Up Funds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [38]=>
+    object(stdClass)#176 (2) {
+      ["name"]=>
+      string(20) "Bartl Start-up Funds"
+      ["type"]=>
+      string(0) ""
+    }
+    [39]=>
+    object(stdClass)#177 (2) {
+      ["name"]=>
+      string(28) "Batch-Fabricated Nanochannel"
+      ["type"]=>
+      string(5) "local"
+    }
+    [40]=>
+    object(stdClass)#178 (2) {
+      ["name"]=>
+      string(15) "Bauxite project"
+      ["type"]=>
+      string(0) ""
+    }
+    [41]=>
+    object(stdClass)#179 (2) {
+      ["name"]=>
+      string(21) "Bauxite Research Fund"
+      ["type"]=>
+      string(5) "local"
+    }
+    [42]=>
+    object(stdClass)#180 (2) {
+      ["name"]=>
+      string(10) "BD Medical"
+      ["type"]=>
+      string(0) ""
+    }
+    [43]=>
+    object(stdClass)#181 (2) {
+      ["name"]=>
+      string(19) "Biochip Development"
+      ["type"]=>
+      string(0) ""
+    }
+    [44]=>
+    object(stdClass)#182 (2) {
+      ["name"]=>
+      string(25) "BioEng Chair Res. Support"
+      ["type"]=>
+      string(5) "local"
+    }
+    [45]=>
+    object(stdClass)#183 (2) {
+      ["name"]=>
+      string(23) "Bioinspired Fabrication"
+      ["type"]=>
+      string(5) "local"
+    }
+    [46]=>
+    object(stdClass)#184 (2) {
+      ["name"]=>
+      string(24) "BIOMEDICAL MICROFLUIDICS"
+      ["type"]=>
+      string(0) ""
+    }
+    [47]=>
+    object(stdClass)#185 (2) {
+      ["name"]=>
+      string(8) "BioMicro"
+      ["type"]=>
+      string(0) ""
+    }
+    [48]=>
+    object(stdClass)#186 (2) {
+      ["name"]=>
+      string(29) "Biomimetic Microadaptive Lens"
+      ["type"]=>
+      string(0) ""
+    }
+    [49]=>
+    object(stdClass)#187 (2) {
+      ["name"]=>
+      string(25) "Biosensor Arrays (Career)"
+      ["type"]=>
+      string(0) ""
+    }
+    [50]=>
+    object(stdClass)#188 (2) {
+      ["name"]=>
+      string(30) "Black Silicon Characterization"
+      ["type"]=>
+      string(0) ""
+    }
+    [51]=>
+    object(stdClass)#189 (2) {
+      ["name"]=>
+      string(16) "Blair SEED Funds"
+      ["type"]=>
+      string(0) ""
+    }
+    [52]=>
+    object(stdClass)#190 (2) {
+      ["name"]=>
+      string(21) "Boehme Start Up Funds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [53]=>
+    object(stdClass)#191 (2) {
+      ["name"]=>
+      string(21) "Boehme Start-Up Funds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [54]=>
+    object(stdClass)#192 (2) {
+      ["name"]=>
+      string(13) "BONE ADHESIVE"
+      ["type"]=>
+      string(0) ""
+    }
+    [55]=>
+    object(stdClass)#193 (2) {
+      ["name"]=>
+      string(22) "BONE AND JOINT STUDIES"
+      ["type"]=>
+      string(18) "University of Utah"
+    }
+    [56]=>
+    object(stdClass)#194 (2) {
+      ["name"]=>
+      string(20) "BONE & JOINT STUDIES"
+      ["type"]=>
+      string(0) ""
+    }
+    [57]=>
+    object(stdClass)#195 (2) {
+      ["name"]=>
+      string(17) "Bootstrap project"
+      ["type"]=>
+      string(0) ""
+    }
+    [58]=>
+    object(stdClass)#196 (2) {
+      ["name"]=>
+      string(17) "Bootstrap Project"
+      ["type"]=>
+      string(0) ""
+    }
+    [59]=>
+    object(stdClass)#197 (2) {
+      ["name"]=>
+      string(30) "Brannon Research and Developme"
+      ["type"]=>
+      string(0) ""
+    }
+    [60]=>
+    object(stdClass)#198 (2) {
+      ["name"]=>
+      string(20) "Brown Start-Up Funds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [61]=>
+    object(stdClass)#199 (2) {
+      ["name"]=>
+      string(29) "BYU Chemistry: ALD SiO2 Depos"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [62]=>
+    object(stdClass)#200 (2) {
+      ["name"]=>
+      string(21) "BYU-Linford Nanotubes"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [63]=>
+    object(stdClass)#201 (2) {
+      ["name"]=>
+      string(33) "Campbell Process Characterization"
+      ["type"]=>
+      string(5) "staff"
+    }
+    [64]=>
+    object(stdClass)#202 (2) {
+      ["name"]=>
+      string(23) "Capillary Manufacturing"
+      ["type"]=>
+      string(0) ""
+    }
+    [65]=>
+    object(stdClass)#203 (2) {
+      ["name"]=>
+      string(30) "Carbon/Ceramic Sputter Deposit"
+      ["type"]=>
+      string(0) ""
+    }
+    [66]=>
+    object(stdClass)#204 (2) {
+      ["name"]=>
+      string(18) "Carbon Solar Cells"
+      ["type"]=>
+      string(5) "local"
+    }
+    [67]=>
+    object(stdClass)#205 (2) {
+      ["name"]=>
+      string(17) "Carbon Solar Cell"
+      ["type"]=>
+      string(5) "local"
+    }
+    [68]=>
+    object(stdClass)#206 (2) {
+      ["name"]=>
+      string(18) "Cardiac Remodeling"
+      ["type"]=>
+      string(0) ""
+    }
+    [69]=>
+    object(stdClass)#207 (2) {
+      ["name"]=>
+      string(12) "CAREER PEDMR"
+      ["type"]=>
+      string(5) "local"
+    }
+    [70]=>
+    object(stdClass)#208 (2) {
+      ["name"]=>
+      string(26) "Career:  Rare Earth Oxides"
+      ["type"]=>
+      string(5) "local"
+    }
+    [71]=>
+    object(stdClass)#209 (2) {
+      ["name"]=>
+      string(18) "CASE: EDDINGS TASK"
+      ["type"]=>
+      string(0) ""
+    }
+    [72]=>
+    object(stdClass)#210 (2) {
+      ["name"]=>
+      string(24) "Cell Immobilization 6423"
+      ["type"]=>
+      string(0) ""
+    }
+    [73]=>
+    object(stdClass)#211 (2) {
+      ["name"]=>
+      string(22) "CEMRI IRG1: Plasmonics"
+      ["type"]=>
+      string(5) "local"
+    }
+    [74]=>
+    object(stdClass)#212 (2) {
+      ["name"]=>
+      string(23) "CEMRI IRG2: Spintronics"
+      ["type"]=>
+      string(5) "local"
+    }
+    [75]=>
+    object(stdClass)#213 (2) {
+      ["name"]=>
+      string(9) "Ceramatec"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [76]=>
+    object(stdClass)#214 (2) {
+      ["name"]=>
+      string(17) "Ceramic Machining"
+      ["type"]=>
+      string(0) ""
+    }
+    [77]=>
+    object(stdClass)#215 (2) {
+      ["name"]=>
+      string(16) "Characterization"
+      ["type"]=>
+      string(0) ""
+    }
+    [78]=>
+    object(stdClass)#216 (2) {
+      ["name"]=>
+      string(28) "Charge-Pumped MEMS Actuation"
+      ["type"]=>
+      string(5) "local"
+    }
+    [79]=>
+    object(stdClass)#217 (2) {
+      ["name"]=>
+      string(30) "Charge Transfer: Organic Semic"
+      ["type"]=>
+      string(0) ""
+    }
+    [80]=>
+    object(stdClass)#218 (2) {
+      ["name"]=>
+      string(20) "Cheryl Forster Class"
+      ["type"]=>
+      string(0) ""
+    }
+    [81]=>
+    object(stdClass)#219 (2) {
+      ["name"]=>
+      string(19) "Chondriotin Sulfate"
+      ["type"]=>
+      string(0) ""
+    }
+    [82]=>
+    object(stdClass)#220 (2) {
+      ["name"]=>
+      string(30) "Chronic Neural Recording Array"
+      ["type"]=>
+      string(0) ""
+    }
+    [83]=>
+    object(stdClass)#221 (2) {
+      ["name"]=>
+      string(25) " CHRONIC NEURAL RECORDING"
+      ["type"]=>
+      string(0) ""
+    }
+    [84]=>
+    object(stdClass)#222 (2) {
+      ["name"]=>
+      string(24) "Chronic Neural Recording"
+      ["type"]=>
+      string(5) "local"
+    }
+    [85]=>
+    object(stdClass)#223 (2) {
+      ["name"]=>
+      string(30) "CLEAN AND SECURE ENERGY FROM C"
+      ["type"]=>
+      string(0) ""
+    }
+    [86]=>
+    object(stdClass)#224 (2) {
+      ["name"]=>
+      string(30) "Coating Microspheres With Gold"
+      ["type"]=>
+      string(0) ""
+    }
+    [87]=>
+    object(stdClass)#225 (2) {
+      ["name"]=>
+      string(14) "Coats start-up"
+      ["type"]=>
+      string(0) ""
+    }
+    [88]=>
+    object(stdClass)#226 (2) {
+      ["name"]=>
+      string(14) "Coats Start-Up"
+      ["type"]=>
+      string(0) ""
+    }
+    [89]=>
+    object(stdClass)#227 (2) {
+      ["name"]=>
+      string(30) "COE: NANOSIZE INORGANIC MATERI"
+      ["type"]=>
+      string(0) ""
+    }
+    [90]=>
+    object(stdClass)#228 (2) {
+      ["name"]=>
+      string(27) "Coherent Spin State Control"
+      ["type"]=>
+      string(5) "local"
+    }
+    [91]=>
+    object(stdClass)#229 (2) {
+      ["name"]=>
+      string(15) "Coherex Medical"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [92]=>
+    object(stdClass)#230 (2) {
+      ["name"]=>
+      string(15) "Coherix Medical"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [93]=>
+    object(stdClass)#231 (2) {
+      ["name"]=>
+      string(30) "Collaborative Research Bionano"
+      ["type"]=>
+      string(5) "local"
+    }
+    [94]=>
+    object(stdClass)#232 (2) {
+      ["name"]=>
+      string(30) "Composite Material Development"
+      ["type"]=>
+      string(0) ""
+    }
+    [95]=>
+    object(stdClass)#233 (2) {
+      ["name"]=>
+      string(21) "Conductive Composites"
+      ["type"]=>
+      string(0) ""
+    }
+    [96]=>
+    object(stdClass)#234 (2) {
+      ["name"]=>
+      string(23) "Conductive Properties C"
+      ["type"]=>
+      string(5) "local"
+    }
+    [97]=>
+    object(stdClass)#235 (2) {
+      ["name"]=>
+      string(21) "Conductive Properties"
+      ["type"]=>
+      string(5) "local"
+    }
+    [98]=>
+    object(stdClass)#236 (2) {
+      ["name"]=>
+      string(20) "Connecting Molecules"
+      ["type"]=>
+      string(0) ""
+    }
+    [99]=>
+    object(stdClass)#237 (2) {
+      ["name"]=>
+      string(30) "Creation of Integrated Platfor"
+      ["type"]=>
+      string(0) ""
+    }
+    [100]=>
+    object(stdClass)#238 (2) {
+      ["name"]=>
+      string(3) "CSA"
+      ["type"]=>
+      string(5) "local"
+    }
+    [101]=>
+    object(stdClass)#239 (2) {
+      ["name"]=>
+      string(9) "CUSTODIAL"
+      ["type"]=>
+      string(5) "staff"
+    }
+    [102]=>
+    object(stdClass)#240 (2) {
+      ["name"]=>
+      string(17) "Cyberkinetics Inc"
+      ["type"]=>
+      string(0) ""
+    }
+    [103]=>
+    object(stdClass)#241 (2) {
+      ["name"]=>
+      string(20) "DARPA Bridge Funding"
+      ["type"]=>
+      string(0) ""
+    }
+    [104]=>
+    object(stdClass)#242 (2) {
+      ["name"]=>
+      string(8) "DARPA GC"
+      ["type"]=>
+      string(5) "local"
+    }
+    [105]=>
+    object(stdClass)#243 (2) {
+      ["name"]=>
+      string(10) "DARPA NEMS"
+      ["type"]=>
+      string(5) "local"
+    }
+    [106]=>
+    object(stdClass)#244 (2) {
+      ["name"]=>
+      string(30) "DARPA Neural Array Fabrication"
+      ["type"]=>
+      string(0) ""
+    }
+    [107]=>
+    object(stdClass)#245 (2) {
+      ["name"]=>
+      string(10) "DARPA PCCM"
+      ["type"]=>
+      string(5) "local"
+    }
+    [108]=>
+    object(stdClass)#246 (2) {
+      ["name"]=>
+      string(30) "DARPA Projects Solzbacher exte"
+      ["type"]=>
+      string(0) ""
+    }
+    [109]=>
+    object(stdClass)#247 (2) {
+      ["name"]=>
+      string(20) "DARPA: Prosthetics 3"
+      ["type"]=>
+      string(5) "local"
+    }
+    [110]=>
+    object(stdClass)#248 (2) {
+      ["name"]=>
+      string(30) "DARPA: Revolut Prosthetics III"
+      ["type"]=>
+      string(5) "local"
+    }
+    [111]=>
+    object(stdClass)#249 (2) {
+      ["name"]=>
+      string(17) "DARPA TBN AFM-CVD"
+      ["type"]=>
+      string(5) "local"
+    }
+    [112]=>
+    object(stdClass)#250 (2) {
+      ["name"]=>
+      string(27) "Darrin Young USTAR Start-up"
+      ["type"]=>
+      string(0) ""
+    }
+    [113]=>
+    object(stdClass)#251 (2) {
+      ["name"]=>
+      string(18) "Darrin Young USTAR"
+      ["type"]=>
+      string(5) "local"
+    }
+    [114]=>
+    object(stdClass)#252 (2) {
+      ["name"]=>
+      string(25) "Davis Interim Chair Funds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [115]=>
+    object(stdClass)#253 (2) {
+      ["name"]=>
+      string(14) "Dean Jorgensen"
+      ["type"]=>
+      string(0) ""
+    }
+    [116]=>
+    object(stdClass)#254 (2) {
+      ["name"]=>
+      string(30) "Denton Sputter Characterizatio"
+      ["type"]=>
+      string(0) ""
+    }
+    [117]=>
+    object(stdClass)#255 (2) {
+      ["name"]=>
+      string(30) "DEVELOPMENT OF EFFICIENT SOLAR"
+      ["type"]=>
+      string(5) "local"
+    }
+    [118]=>
+    object(stdClass)#256 (2) {
+      ["name"]=>
+      string(30) "Development of Fracture Toughn"
+      ["type"]=>
+      string(0) ""
+    }
+    [119]=>
+    object(stdClass)#257 (2) {
+      ["name"]=>
+      string(30) "Development of Spin Microscope"
+      ["type"]=>
+      string(5) "local"
+    }
+    [120]=>
+    object(stdClass)#258 (2) {
+      ["name"]=>
+      string(24) "DNA Filter Device ME4005"
+      ["type"]=>
+      string(0) ""
+    }
+    [121]=>
+    object(stdClass)#259 (2) {
+      ["name"]=>
+      string(30) "DNA Morphology: Polymer Carrie"
+      ["type"]=>
+      string(0) ""
+    }
+    [122]=>
+    object(stdClass)#260 (2) {
+      ["name"]=>
+      string(5) "Doors"
+      ["type"]=>
+      string(0) ""
+    }
+    [123]=>
+    object(stdClass)#261 (2) {
+      ["name"]=>
+      string(15) "DSCRA Jorgensen"
+      ["type"]=>
+      string(5) "local"
+    }
+    [124]=>
+    object(stdClass)#262 (2) {
+      ["name"]=>
+      string(25) "Early Cancer Detection II"
+      ["type"]=>
+      string(5) "local"
+    }
+    [125]=>
+    object(stdClass)#263 (2) {
+      ["name"]=>
+      string(30) "Early Cancer Detection Platfor"
+      ["type"]=>
+      string(5) "local"
+    }
+    [126]=>
+    object(stdClass)#264 (2) {
+      ["name"]=>
+      string(15) "ECE 5212 Spring"
+      ["type"]=>
+      string(0) ""
+    }
+    [127]=>
+    object(stdClass)#265 (2) {
+      ["name"]=>
+      string(21) "ECE 5221- Spring 2010"
+      ["type"]=>
+      string(0) ""
+    }
+    [128]=>
+    object(stdClass)#266 (2) {
+      ["name"]=>
+      string(19) "ECE 5960- Fall 2009"
+      ["type"]=>
+      string(0) ""
+    }
+    [129]=>
+    object(stdClass)#267 (2) {
+      ["name"]=>
+      string(19) "ECE 6231- Fall 2009"
+      ["type"]=>
+      string(0) ""
+    }
+    [130]=>
+    object(stdClass)#268 (2) {
+      ["name"]=>
+      string(18) "ECE6960 Spring2006"
+      ["type"]=>
+      string(0) ""
+    }
+    [131]=>
+    object(stdClass)#269 (2) {
+      ["name"]=>
+      string(21) "ECE 6960- Spring 2010"
+      ["type"]=>
+      string(0) ""
+    }
+    [132]=>
+    object(stdClass)#270 (2) {
+      ["name"]=>
+      string(21) "ECE 6962- Spring 2010"
+      ["type"]=>
+      string(0) ""
+    }
+    [133]=>
+    object(stdClass)#271 (2) {
+      ["name"]=>
+      string(22) "EDMR and ODMR on OLEDs"
+      ["type"]=>
+      string(5) "local"
+    }
+    [134]=>
+    object(stdClass)#272 (2) {
+      ["name"]=>
+      string(18) "Electroabsorption2"
+      ["type"]=>
+      string(0) ""
+    }
+    [135]=>
+    object(stdClass)#273 (2) {
+      ["name"]=>
+      string(17) "Electroabsorption"
+      ["type"]=>
+      string(0) ""
+    }
+    [136]=>
+    object(stdClass)#274 (2) {
+      ["name"]=>
+      string(30) "Electro-Biology, Metal Sputter"
+      ["type"]=>
+      string(0) ""
+    }
+    [137]=>
+    object(stdClass)#275 (2) {
+      ["name"]=>
+      string(28) "Electrodes for Neurodynamics"
+      ["type"]=>
+      string(5) "local"
+    }
+    [138]=>
+    object(stdClass)#276 (2) {
+      ["name"]=>
+      string(30) "Electronic Nose for Polymer Fi"
+      ["type"]=>
+      string(0) ""
+    }
+    [139]=>
+    object(stdClass)#277 (2) {
+      ["name"]=>
+      string(24) "Embedded Power Converter"
+      ["type"]=>
+      string(5) "local"
+    }
+    [140]=>
+    object(stdClass)#278 (2) {
+      ["name"]=>
+      string(8) "EmiSense"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [141]=>
+    object(stdClass)#279 (2) {
+      ["name"]=>
+      string(11) "End Effects"
+      ["type"]=>
+      string(0) ""
+    }
+    [142]=>
+    object(stdClass)#280 (2) {
+      ["name"]=>
+      string(29) "Engineering Neural Interfaces"
+      ["type"]=>
+      string(5) "local"
+    }
+    [143]=>
+    object(stdClass)#281 (2) {
+      ["name"]=>
+      string(30) "Enhanced Microarray Substrates"
+      ["type"]=>
+      string(0) ""
+    }
+    [144]=>
+    object(stdClass)#282 (2) {
+      ["name"]=>
+      string(29) "Enhanced Tactical Fuel Design"
+      ["type"]=>
+      string(5) "local"
+    }
+    [145]=>
+    object(stdClass)#283 (2) {
+      ["name"]=>
+      string(26) "EROSION RESISTANT COATINGS"
+      ["type"]=>
+      string(0) ""
+    }
+    [146]=>
+    object(stdClass)#284 (2) {
+      ["name"]=>
+      string(21) "ESR Samples: Start-up"
+      ["type"]=>
+      string(0) ""
+    }
+    [147]=>
+    object(stdClass)#285 (2) {
+      ["name"]=>
+      string(30) "EXPLORATORY RESEARCH ON FLUORE"
+      ["type"]=>
+      string(5) "local"
+    }
+    [148]=>
+    object(stdClass)#286 (2) {
+      ["name"]=>
+      string(24) "Fairchild Electroplating"
+      ["type"]=>
+      string(0) ""
+    }
+    [149]=>
+    object(stdClass)#287 (2) {
+      ["name"]=>
+      string(26) "Fall 2011 SEM Short Course"
+      ["type"]=>
+      string(5) "class"
+    }
+    [150]=>
+    object(stdClass)#288 (2) {
+      ["name"]=>
+      string(25) "Field Portable Biomonitor"
+      ["type"]=>
+      string(0) ""
+    }
+    [151]=>
+    object(stdClass)#289 (2) {
+      ["name"]=>
+      string(20) "Flexible Solar Cells"
+      ["type"]=>
+      string(0) ""
+    }
+    [152]=>
+    object(stdClass)#290 (2) {
+      ["name"]=>
+      string(30) "Fluorescence Enhancement Struc"
+      ["type"]=>
+      string(0) ""
+    }
+    [153]=>
+    object(stdClass)#291 (2) {
+      ["name"]=>
+      string(19) "Fluorescent Sensing"
+      ["type"]=>
+      string(5) "local"
+    }
+    [154]=>
+    object(stdClass)#292 (2) {
+      ["name"]=>
+      string(30) "Foam Cement of Sandcastle Worm"
+      ["type"]=>
+      string(5) "local"
+    }
+    [155]=>
+    object(stdClass)#293 (2) {
+      ["name"]=>
+      string(21) "Foreign Body Response"
+      ["type"]=>
+      string(0) ""
+    }
+    [156]=>
+    object(stdClass)#294 (2) {
+      ["name"]=>
+      string(24) "Fraunhofer Collaboration"
+      ["type"]=>
+      string(5) "local"
+    }
+    [157]=>
+    object(stdClass)#295 (2) {
+      ["name"]=>
+      string(28) "Free Education Research Fund"
+      ["type"]=>
+      string(5) "local"
+    }
+    [158]=>
+    object(stdClass)#296 (2) {
+      ["name"]=>
+      string(9) "Fresenius"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [159]=>
+    object(stdClass)#297 (2) {
+      ["name"]=>
+      string(22) "FRG: Photovoltaic Apps"
+      ["type"]=>
+      string(0) ""
+    }
+    [160]=>
+    object(stdClass)#298 (2) {
+      ["name"]=>
+      string(21) "Friction in Machining"
+      ["type"]=>
+      string(0) ""
+    }
+    [161]=>
+    object(stdClass)#299 (2) {
+      ["name"]=>
+      string(20) "GALE, BRUCE START-UP"
+      ["type"]=>
+      string(0) ""
+    }
+    [162]=>
+    object(stdClass)#300 (2) {
+      ["name"]=>
+      string(28) "Gene Therapy for Head Cancer"
+      ["type"]=>
+      string(5) "local"
+    }
+    [163]=>
+    object(stdClass)#301 (2) {
+      ["name"]=>
+      string(21) "Germanium Fabrication"
+      ["type"]=>
+      string(0) ""
+    }
+    [164]=>
+    object(stdClass)#302 (2) {
+      ["name"]=>
+      string(9) "Germanium"
+      ["type"]=>
+      string(0) ""
+    }
+    [165]=>
+    object(stdClass)#303 (2) {
+      ["name"]=>
+      string(16) "Ghandehari USTAR"
+      ["type"]=>
+      string(5) "local"
+    }
+    [166]=>
+    object(stdClass)#304 (2) {
+      ["name"]=>
+      string(20) "Glass Pillar Etching"
+      ["type"]=>
+      string(0) ""
+    }
+    [167]=>
+    object(stdClass)#305 (2) {
+      ["name"]=>
+      string(12) "Gold on Mica"
+      ["type"]=>
+      string(0) ""
+    }
+    [168]=>
+    object(stdClass)#306 (2) {
+      ["name"]=>
+      string(19) "Grainger: Chair IDC"
+      ["type"]=>
+      string(0) ""
+    }
+    [169]=>
+    object(stdClass)#307 (2) {
+      ["name"]=>
+      string(21) "Grayscale Lithography"
+      ["type"]=>
+      string(5) "local"
+    }
+    [170]=>
+    object(stdClass)#308 (2) {
+      ["name"]=>
+      string(22) "GROUP IV NANOMEMBRANES"
+      ["type"]=>
+      string(0) ""
+    }
+    [171]=>
+    object(stdClass)#309 (2) {
+      ["name"]=>
+      string(22) "Group IV Nanomembranes"
+      ["type"]=>
+      string(5) "local"
+    }
+    [172]=>
+    object(stdClass)#310 (2) {
+      ["name"]=>
+      string(19) "Guruswamy Seed Fund"
+      ["type"]=>
+      string(5) "local"
+    }
+    [173]=>
+    object(stdClass)#311 (2) {
+      ["name"]=>
+      string(10) "HAIR CELLS"
+      ["type"]=>
+      string(0) ""
+    }
+    [174]=>
+    object(stdClass)#312 (2) {
+      ["name"]=>
+      string(17) "Hanseup Kim USTAR"
+      ["type"]=>
+      string(5) "local"
+    }
+    [175]=>
+    object(stdClass)#313 (2) {
+      ["name"]=>
+      string(16) "Hardware Support"
+      ["type"]=>
+      string(0) ""
+    }
+    [176]=>
+    object(stdClass)#314 (2) {
+      ["name"]=>
+      string(20) "Head and Neck Cancer"
+      ["type"]=>
+      string(0) ""
+    }
+    [177]=>
+    object(stdClass)#315 (2) {
+      ["name"]=>
+      string(19) "Hemostatic Peptides"
+      ["type"]=>
+      string(5) "local"
+    }
+    [178]=>
+    object(stdClass)#316 (2) {
+      ["name"]=>
+      string(11) "Hess Pumice"
+      ["type"]=>
+      string(5) "local"
+    }
+    [179]=>
+    object(stdClass)#317 (2) {
+      ["name"]=>
+      string(11) "Himmer- MSU"
+      ["type"]=>
+      string(0) ""
+    }
+    [180]=>
+    object(stdClass)#318 (2) {
+      ["name"]=>
+      string(24) "Hip Implant Wear Testing"
+      ["type"]=>
+      string(5) "local"
+    }
+    [181]=>
+    object(stdClass)#319 (2) {
+      ["name"]=>
+      string(16) "Hip Implant Wear"
+      ["type"]=>
+      string(5) "local"
+    }
+    [182]=>
+    object(stdClass)#320 (2) {
+      ["name"]=>
+      string(30) "Histology/Biocompatibility, An"
+      ["type"]=>
+      string(0) ""
+    }
+    [183]=>
+    object(stdClass)#321 (2) {
+      ["name"]=>
+      string(21) "H. Kim USTAR Start-up"
+      ["type"]=>
+      string(5) "local"
+    }
+    [184]=>
+    object(stdClass)#322 (2) {
+      ["name"]=>
+      string(30) "Hydrogel-Based Metabolic Senso"
+      ["type"]=>
+      string(0) ""
+    }
+    [185]=>
+    object(stdClass)#323 (2) {
+      ["name"]=>
+      string(14) "Hydrogels 6423"
+      ["type"]=>
+      string(0) ""
+    }
+    [186]=>
+    object(stdClass)#324 (2) {
+      ["name"]=>
+      string(28) "Hydrogen Separation Membrane"
+      ["type"]=>
+      string(0) ""
+    }
+    [187]=>
+    object(stdClass)#325 (2) {
+      ["name"]=>
+      string(16) "Hydrogen Storage"
+      ["type"]=>
+      string(5) "local"
+    }
+    [188]=>
+    object(stdClass)#326 (2) {
+      ["name"]=>
+      string(9) "HzO, Inc."
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [189]=>
+    object(stdClass)#327 (2) {
+      ["name"]=>
+      string(17) "I2S/Blackrock sub"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [190]=>
+    object(stdClass)#328 (2) {
+      ["name"]=>
+      string(6) "IC art"
+      ["type"]=>
+      string(0) ""
+    }
+    [191]=>
+    object(stdClass)#329 (2) {
+      ["name"]=>
+      string(5) "IGERT"
+      ["type"]=>
+      string(0) ""
+    }
+    [192]=>
+    object(stdClass)#330 (2) {
+      ["name"]=>
+      string(19) "IIIV Semiconductors"
+      ["type"]=>
+      string(0) ""
+    }
+    [193]=>
+    object(stdClass)#331 (2) {
+      ["name"]=>
+      string(26) "Implantable Eye Biosensors"
+      ["type"]=>
+      string(5) "local"
+    }
+    [194]=>
+    object(stdClass)#332 (2) {
+      ["name"]=>
+      string(29) "Implantable Microsensor Array"
+      ["type"]=>
+      string(5) "local"
+    }
+    [195]=>
+    object(stdClass)#333 (2) {
+      ["name"]=>
+      string(19) "IMPLANTED MATERIALS"
+      ["type"]=>
+      string(0) ""
+    }
+    [196]=>
+    object(stdClass)#334 (2) {
+      ["name"]=>
+      string(26) "IMPROVING LIGHT EXTRACTION"
+      ["type"]=>
+      string(0) ""
+    }
+    [197]=>
+    object(stdClass)#335 (2) {
+      ["name"]=>
+      string(29) "Infection Prevention Barriers"
+      ["type"]=>
+      string(0) ""
+    }
+    [198]=>
+    object(stdClass)#336 (2) {
+      ["name"]=>
+      string(14) "Ingan for Leds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [199]=>
+    object(stdClass)#337 (2) {
+      ["name"]=>
+      string(22) "Intelligent Prosthesis"
+      ["type"]=>
+      string(5) "local"
+    }
+    [200]=>
+    object(stdClass)#338 (2) {
+      ["name"]=>
+      string(27) "Interferometric Lithography"
+      ["type"]=>
+      string(5) "local"
+    }
+    [201]=>
+    object(stdClass)#339 (2) {
+      ["name"]=>
+      string(9) "Inventory"
+      ["type"]=>
+      string(0) ""
+    }
+    [202]=>
+    object(stdClass)#340 (2) {
+      ["name"]=>
+      string(25) "In Vivo Synaptic Function"
+      ["type"]=>
+      string(5) "local"
+    }
+    [203]=>
+    object(stdClass)#341 (2) {
+      ["name"]=>
+      string(19) "Irregular Particles"
+      ["type"]=>
+      string(0) ""
+    }
+    [204]=>
+    object(stdClass)#342 (2) {
+      ["name"]=>
+      string(24) "Jeong projects Fall 2008"
+      ["type"]=>
+      string(0) ""
+    }
+    [205]=>
+    object(stdClass)#343 (2) {
+      ["name"]=>
+      string(30) "Jun Yang Dissertation Research"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [206]=>
+    object(stdClass)#344 (2) {
+      ["name"]=>
+      string(30) "Jun Yang Process Characterizat"
+      ["type"]=>
+      string(5) "staff"
+    }
+    [207]=>
+    object(stdClass)#345 (2) {
+      ["name"]=>
+      string(28) "Kenneth Stevens Start-up ECE"
+      ["type"]=>
+      string(0) ""
+    }
+    [208]=>
+    object(stdClass)#346 (2) {
+      ["name"]=>
+      string(15) "Kepri Corrosion"
+      ["type"]=>
+      string(0) ""
+    }
+    [209]=>
+    object(stdClass)#347 (2) {
+      ["name"]=>
+      string(16) "KOH Etched Holes"
+      ["type"]=>
+      string(0) ""
+    }
+    [210]=>
+    object(stdClass)#348 (2) {
+      ["name"]=>
+      string(24) "KrF Laser Micromachining"
+      ["type"]=>
+      string(0) ""
+    }
+    [211]=>
+    object(stdClass)#349 (2) {
+      ["name"]=>
+      string(27) "Large Scale Nanopore Arrays"
+      ["type"]=>
+      string(0) ""
+    }
+    [212]=>
+    object(stdClass)#350 (2) {
+      ["name"]=>
+      string(11) "Laser Diode"
+      ["type"]=>
+      string(0) ""
+    }
+    [213]=>
+    object(stdClass)#351 (2) {
+      ["name"]=>
+      string(15) "Laser Institute"
+      ["type"]=>
+      string(5) "local"
+    }
+    [214]=>
+    object(stdClass)#352 (2) {
+      ["name"]=>
+      string(24) "Light Manipulation of PC"
+      ["type"]=>
+      string(0) ""
+    }
+    [215]=>
+    object(stdClass)#353 (2) {
+      ["name"]=>
+      string(15) "Lipid Asymmetry"
+      ["type"]=>
+      string(5) "local"
+    }
+    [216]=>
+    object(stdClass)#354 (2) {
+      ["name"]=>
+      string(20) "Lockheed Martin SiGe"
+      ["type"]=>
+      string(0) ""
+    }
+    [217]=>
+    object(stdClass)#355 (2) {
+      ["name"]=>
+      string(29) "Long-Term Sensitization Model"
+      ["type"]=>
+      string(5) "local"
+    }
+    [218]=>
+    object(stdClass)#356 (2) {
+      ["name"]=>
+      string(30) "LOW-COST IR WINDOWS AND LENSES"
+      ["type"]=>
+      string(0) ""
+    }
+    [219]=>
+    object(stdClass)#357 (2) {
+      ["name"]=>
+      string(22) "Low-Expansion Ceramics"
+      ["type"]=>
+      string(5) "local"
+    }
+    [220]=>
+    object(stdClass)#358 (2) {
+      ["name"]=>
+      string(18) "Low-Stress Nitride"
+      ["type"]=>
+      string(0) ""
+    }
+    [221]=>
+    object(stdClass)#359 (2) {
+      ["name"]=>
+      string(11) "Maintenance"
+      ["type"]=>
+      string(5) "staff"
+    }
+    [222]=>
+    object(stdClass)#360 (2) {
+      ["name"]=>
+      string(17) "Marc Porter USTAR"
+      ["type"]=>
+      string(5) "local"
+    }
+    [223]=>
+    object(stdClass)#361 (2) {
+      ["name"]=>
+      string(30) "Mark Miller Clinic Administrat"
+      ["type"]=>
+      string(0) ""
+    }
+    [224]=>
+    object(stdClass)#362 (2) {
+      ["name"]=>
+      string(13) "Mascaro MRSEC"
+      ["type"]=>
+      string(5) "local"
+    }
+    [225]=>
+    object(stdClass)#363 (2) {
+      ["name"]=>
+      string(30) "Mascaro Seed:  ACS Petroleum R"
+      ["type"]=>
+      string(0) ""
+    }
+    [226]=>
+    object(stdClass)#364 (2) {
+      ["name"]=>
+      string(10) "Mask Array"
+      ["type"]=>
+      string(0) ""
+    }
+    [227]=>
+    object(stdClass)#365 (2) {
+      ["name"]=>
+      string(27) "Massood Tabib-Azar Start Up"
+      ["type"]=>
+      string(0) ""
+    }
+    [228]=>
+    object(stdClass)#366 (2) {
+      ["name"]=>
+      string(17) "Mastrangelo USTAR"
+      ["type"]=>
+      string(5) "local"
+    }
+    [229]=>
+    object(stdClass)#367 (2) {
+      ["name"]=>
+      string(30) "Match for DOE Gas Sensors: In-"
+      ["type"]=>
+      string(0) ""
+    }
+    [230]=>
+    object(stdClass)#368 (2) {
+      ["name"]=>
+      string(26) "Materials Characterization"
+      ["type"]=>
+      string(5) "local"
+    }
+    [231]=>
+    object(stdClass)#369 (2) {
+      ["name"]=>
+      string(23) "MATERIALS WORLD NETWORK"
+      ["type"]=>
+      string(5) "local"
+    }
+    [232]=>
+    object(stdClass)#370 (2) {
+      ["name"]=>
+      string(18) "ME 2960- Fall 2009"
+      ["type"]=>
+      string(0) ""
+    }
+    [233]=>
+    object(stdClass)#371 (2) {
+      ["name"]=>
+      string(20) "ME 5221- Spring 2010"
+      ["type"]=>
+      string(0) ""
+    }
+    [234]=>
+    object(stdClass)#372 (2) {
+      ["name"]=>
+      string(18) "ME 5960- Fall 2009"
+      ["type"]=>
+      string(0) ""
+    }
+    [235]=>
+    object(stdClass)#373 (2) {
+      ["name"]=>
+      string(29) "Mems and Nanotech Development"
+      ["type"]=>
+      string(5) "local"
+    }
+    [236]=>
+    object(stdClass)#374 (2) {
+      ["name"]=>
+      string(19) "MEMS Device Upgrade"
+      ["type"]=>
+      string(0) ""
+    }
+    [237]=>
+    object(stdClass)#375 (2) {
+      ["name"]=>
+      string(26) "MEMS Impedance: Hair Cells"
+      ["type"]=>
+      string(0) ""
+    }
+    [238]=>
+    object(stdClass)#376 (2) {
+      ["name"]=>
+      string(9) "MEMS IRIS"
+      ["type"]=>
+      string(0) ""
+    }
+    [239]=>
+    object(stdClass)#377 (2) {
+      ["name"]=>
+      string(13) "Merit Medical"
+      ["type"]=>
+      string(0) ""
+    }
+    [240]=>
+    object(stdClass)#378 (2) {
+      ["name"]=>
+      string(30) "Merit: On-campus research proj"
+      ["type"]=>
+      string(0) ""
+    }
+    [241]=>
+    object(stdClass)#379 (2) {
+      ["name"]=>
+      string(22) "Metallic DNA Biosensor"
+      ["type"]=>
+      string(0) ""
+    }
+    [242]=>
+    object(stdClass)#380 (2) {
+      ["name"]=>
+      string(21) "METALLIC NANOCAVITIES"
+      ["type"]=>
+      string(0) ""
+    }
+    [243]=>
+    object(stdClass)#381 (2) {
+      ["name"]=>
+      string(25) "Michael Moats Development"
+      ["type"]=>
+      string(5) "local"
+    }
+    [244]=>
+    object(stdClass)#382 (2) {
+      ["name"]=>
+      string(27) "Microarray Surface Analysis"
+      ["type"]=>
+      string(0) ""
+    }
+    [245]=>
+    object(stdClass)#383 (2) {
+      ["name"]=>
+      string(10) "MicroArray"
+      ["type"]=>
+      string(0) ""
+    }
+    [246]=>
+    object(stdClass)#384 (2) {
+      ["name"]=>
+      string(27) "Microchannel Cooling System"
+      ["type"]=>
+      string(0) ""
+    }
+    [247]=>
+    object(stdClass)#385 (2) {
+      ["name"]=>
+      string(24) "Microchannel Fabrication"
+      ["type"]=>
+      string(0) ""
+    }
+    [248]=>
+    object(stdClass)#386 (2) {
+      ["name"]=>
+      string(19) "Microchannel Mixing"
+      ["type"]=>
+      string(0) ""
+    }
+    [249]=>
+    object(stdClass)#387 (2) {
+      ["name"]=>
+      string(18) "Microchannel Study"
+      ["type"]=>
+      string(0) ""
+    }
+    [250]=>
+    object(stdClass)#388 (2) {
+      ["name"]=>
+      string(8) "MicroDAF"
+      ["type"]=>
+      string(0) ""
+    }
+    [251]=>
+    object(stdClass)#389 (2) {
+      ["name"]=>
+      string(10) "Micro EFFF"
+      ["type"]=>
+      string(0) ""
+    }
+    [252]=>
+    object(stdClass)#390 (2) {
+      ["name"]=>
+      string(9) "Micro EIT"
+      ["type"]=>
+      string(0) ""
+    }
+    [253]=>
+    object(stdClass)#391 (2) {
+      ["name"]=>
+      string(30) "Microfabrication of Gold Nanop"
+      ["type"]=>
+      string(0) ""
+    }
+    [254]=>
+    object(stdClass)#392 (2) {
+      ["name"]=>
+      string(30) "Microfabrication of Nanostruct"
+      ["type"]=>
+      string(0) ""
+    }
+    [255]=>
+    object(stdClass)#393 (2) {
+      ["name"]=>
+      string(30) "Microfluid Flow (Ameel Start-u"
+      ["type"]=>
+      string(0) ""
+    }
+    [256]=>
+    object(stdClass)#394 (2) {
+      ["name"]=>
+      string(30) "Microfluidic Electrical Contac"
+      ["type"]=>
+      string(0) ""
+    }
+    [257]=>
+    object(stdClass)#395 (2) {
+      ["name"]=>
+      string(24) "Microfluidic Sensor Chip"
+      ["type"]=>
+      string(5) "local"
+    }
+    [258]=>
+    object(stdClass)#396 (2) {
+      ["name"]=>
+      string(19) "Microfluidic Sensor"
+      ["type"]=>
+      string(0) ""
+    }
+    [259]=>
+    object(stdClass)#397 (2) {
+      ["name"]=>
+      string(16) "Micro Fuel Cells"
+      ["type"]=>
+      string(0) ""
+    }
+    [260]=>
+    object(stdClass)#398 (2) {
+      ["name"]=>
+      string(17) "Micro Gas Sensors"
+      ["type"]=>
+      string(0) ""
+    }
+    [261]=>
+    object(stdClass)#399 (2) {
+      ["name"]=>
+      string(25) "Micromoire Interferometry"
+      ["type"]=>
+      string(0) ""
+    }
+    [262]=>
+    object(stdClass)#400 (2) {
+      ["name"]=>
+      string(28) "Micro/Nano Injection Molding"
+      ["type"]=>
+      string(0) ""
+    }
+    [263]=>
+    object(stdClass)#401 (2) {
+      ["name"]=>
+      string(17) "MicroPCR BIO 6423"
+      ["type"]=>
+      string(0) ""
+    }
+    [264]=>
+    object(stdClass)#402 (2) {
+      ["name"]=>
+      string(28) "Micro PCR Training (Wittwer)"
+      ["type"]=>
+      string(0) ""
+    }
+    [265]=>
+    object(stdClass)#403 (2) {
+      ["name"]=>
+      string(16) "Microspotter MFG"
+      ["type"]=>
+      string(0) ""
+    }
+    [266]=>
+    object(stdClass)#404 (2) {
+      ["name"]=>
+      string(22) "Microsystems Fall 2008"
+      ["type"]=>
+      string(0) ""
+    }
+    [267]=>
+    object(stdClass)#405 (2) {
+      ["name"]=>
+      string(17) "Microtube Cutting"
+      ["type"]=>
+      string(0) ""
+    }
+    [268]=>
+    object(stdClass)#406 (2) {
+      ["name"]=>
+      string(11) "Microvalves"
+      ["type"]=>
+      string(5) "local"
+    }
+    [269]=>
+    object(stdClass)#407 (2) {
+      ["name"]=>
+      string(10) "Micro-WEDM"
+      ["type"]=>
+      string(0) ""
+    }
+    [270]=>
+    object(stdClass)#408 (2) {
+      ["name"]=>
+      string(11) "Misra USTAR"
+      ["type"]=>
+      string(5) "local"
+    }
+    [271]=>
+    object(stdClass)#409 (2) {
+      ["name"]=>
+      string(14) "Moire Gratings"
+      ["type"]=>
+      string(0) ""
+    }
+    [272]=>
+    object(stdClass)#410 (2) {
+      ["name"]=>
+      string(27) "MOLECULAR CHARACTERIZIATION"
+      ["type"]=>
+      string(0) ""
+    }
+    [273]=>
+    object(stdClass)#411 (2) {
+      ["name"]=>
+      string(29) "Molecular Electronic Contacts"
+      ["type"]=>
+      string(0) ""
+    }
+    [274]=>
+    object(stdClass)#412 (2) {
+      ["name"]=>
+      string(22) "Molecular Fluorescence"
+      ["type"]=>
+      string(0) ""
+    }
+    [275]=>
+    object(stdClass)#413 (2) {
+      ["name"]=>
+      string(15) "molecular wires"
+      ["type"]=>
+      string(0) ""
+    }
+    [276]=>
+    object(stdClass)#414 (2) {
+      ["name"]=>
+      string(26) "MOLECULE/POLYMER MATERIALS"
+      ["type"]=>
+      string(0) ""
+    }
+    [277]=>
+    object(stdClass)#415 (2) {
+      ["name"]=>
+      string(12) "Monolayer EI"
+      ["type"]=>
+      string(0) ""
+    }
+    [278]=>
+    object(stdClass)#416 (2) {
+      ["name"]=>
+      string(13) "Moxtek Clinic"
+      ["type"]=>
+      string(0) ""
+    }
+    [279]=>
+    object(stdClass)#417 (2) {
+      ["name"]=>
+      string(20) "Moxtek Collaboration"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [280]=>
+    object(stdClass)#418 (2) {
+      ["name"]=>
+      string(11) "MRI Phantom"
+      ["type"]=>
+      string(5) "local"
+    }
+    [281]=>
+    object(stdClass)#419 (2) {
+      ["name"]=>
+      string(23) "MRSEC IRG2: NMR IN SPIN"
+      ["type"]=>
+      string(5) "local"
+    }
+    [282]=>
+    object(stdClass)#420 (2) {
+      ["name"]=>
+      string(24) "MRSEC IRG2: Spin Physics"
+      ["type"]=>
+      string(5) "local"
+    }
+    [283]=>
+    object(stdClass)#421 (2) {
+      ["name"]=>
+      string(19) "MSE 5050- Fall 2009"
+      ["type"]=>
+      string(0) ""
+    }
+    [284]=>
+    object(stdClass)#422 (2) {
+      ["name"]=>
+      string(4) "MSRI"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [285]=>
+    object(stdClass)#423 (2) {
+      ["name"]=>
+      string(29) "Multiple Exposure Absorbances"
+      ["type"]=>
+      string(5) "local"
+    }
+    [286]=>
+    object(stdClass)#424 (2) {
+      ["name"]=>
+      string(21) "Multiplexed Biomarker"
+      ["type"]=>
+      string(5) "local"
+    }
+    [287]=>
+    object(stdClass)#425 (2) {
+      ["name"]=>
+      string(28) "Nahata: New Faculty Start-up"
+      ["type"]=>
+      string(0) ""
+    }
+    [288]=>
+    object(stdClass)#426 (2) {
+      ["name"]=>
+      string(12) "Nano Battery"
+      ["type"]=>
+      string(5) "local"
+    }
+    [289]=>
+    object(stdClass)#427 (2) {
+      ["name"]=>
+      string(27) "Nanocatalysts in Propulsion"
+      ["type"]=>
+      string(5) "local"
+    }
+    [290]=>
+    object(stdClass)#428 (2) {
+      ["name"]=>
+      string(13) "Nanocatalysts"
+      ["type"]=>
+      string(5) "local"
+    }
+    [291]=>
+    object(stdClass)#429 (2) {
+      ["name"]=>
+      string(28) "Nano-Engines for Electronics"
+      ["type"]=>
+      string(5) "local"
+    }
+    [292]=>
+    object(stdClass)#430 (2) {
+      ["name"]=>
+      string(29) "Nanographite Based Solar Cell"
+      ["type"]=>
+      string(5) "local"
+    }
+    [293]=>
+    object(stdClass)#431 (2) {
+      ["name"]=>
+      string(24) "Nanographite Solar Cells"
+      ["type"]=>
+      string(5) "local"
+    }
+    [294]=>
+    object(stdClass)#432 (2) {
+      ["name"]=>
+      string(13) "Nanomagnetism"
+      ["type"]=>
+      string(0) ""
+    }
+    [295]=>
+    object(stdClass)#433 (2) {
+      ["name"]=>
+      string(25) "Nanomaterials and Devices"
+      ["type"]=>
+      string(5) "local"
+    }
+    [296]=>
+    object(stdClass)#434 (2) {
+      ["name"]=>
+      string(24) "Nano-Oxides VIP Proposal"
+      ["type"]=>
+      string(0) ""
+    }
+    [297]=>
+    object(stdClass)#435 (2) {
+      ["name"]=>
+      string(29) "NANOPARTICLE-COATED NANOPORES"
+      ["type"]=>
+      string(0) ""
+    }
+    [298]=>
+    object(stdClass)#436 (2) {
+      ["name"]=>
+      string(9) "Nanopores"
+      ["type"]=>
+      string(0) ""
+    }
+    [299]=>
+    object(stdClass)#437 (2) {
+      ["name"]=>
+      string(27) "Nanoscale Photonic Crystals"
+      ["type"]=>
+      string(0) ""
+    }
+    [300]=>
+    object(stdClass)#438 (2) {
+      ["name"]=>
+      string(16) "NANOTIP CWRU SUB"
+      ["type"]=>
+      string(5) "local"
+    }
+    [301]=>
+    object(stdClass)#439 (2) {
+      ["name"]=>
+      string(19) "Nanotip Fabrication"
+      ["type"]=>
+      string(5) "local"
+    }
+    [302]=>
+    object(stdClass)#440 (2) {
+      ["name"]=>
+      string(9) "Nanowires"
+      ["type"]=>
+      string(0) ""
+    }
+    [303]=>
+    object(stdClass)#441 (2) {
+      ["name"]=>
+      string(7) "Needles"
+      ["type"]=>
+      string(0) ""
+    }
+    [304]=>
+    object(stdClass)#442 (2) {
+      ["name"]=>
+      string(20) "needs user agreement"
+      ["type"]=>
+      string(0) ""
+    }
+    [305]=>
+    object(stdClass)#443 (2) {
+      ["name"]=>
+      string(30) "NER: NANOPHOTONIC SUPERPOLARIT"
+      ["type"]=>
+      string(0) ""
+    }
+    [306]=>
+    object(stdClass)#444 (2) {
+      ["name"]=>
+      string(12) "Neural Array"
+      ["type"]=>
+      string(0) ""
+    }
+    [307]=>
+    object(stdClass)#445 (2) {
+      ["name"]=>
+      string(30) "Neuronal Pathfinding on Modifi"
+      ["type"]=>
+      string(0) ""
+    }
+    [308]=>
+    object(stdClass)#446 (2) {
+      ["name"]=>
+      string(20) "Neuronal Pathfinding"
+      ["type"]=>
+      string(5) "local"
+    }
+    [309]=>
+    object(stdClass)#447 (2) {
+      ["name"]=>
+      string(25) "Neuron-ligand Pathfinding"
+      ["type"]=>
+      string(0) ""
+    }
+    [310]=>
+    object(stdClass)#448 (2) {
+      ["name"]=>
+      string(28) "NIH Chronic Neural Recording"
+      ["type"]=>
+      string(0) ""
+    }
+    [311]=>
+    object(stdClass)#449 (2) {
+      ["name"]=>
+      string(27) "NIR for Blood Interferences"
+      ["type"]=>
+      string(0) ""
+    }
+    [312]=>
+    object(stdClass)#450 (2) {
+      ["name"]=>
+      string(3) "NMC"
+      ["type"]=>
+      string(7) "foreign"
+    }
+    [313]=>
+    object(stdClass)#451 (2) {
+      ["name"]=>
+      string(9) "*no name*"
+      ["type"]=>
+      string(0) ""
+    }
+    [314]=>
+    object(stdClass)#452 (2) {
+      ["name"]=>
+      string(23) "Nonlinear GRSC Analysis"
+      ["type"]=>
+      string(5) "local"
+    }
+    [315]=>
+    object(stdClass)#453 (2) {
+      ["name"]=>
+      string(30) "NONLINEARITY ANALYSIS OF SOLDI"
+      ["type"]=>
+      string(5) "local"
+    }
+    [316]=>
+    object(stdClass)#454 (2) {
+      ["name"]=>
+      string(21) "Nonlinearity Analysis"
+      ["type"]=>
+      string(5) "local"
+    }
+    [317]=>
+    object(stdClass)#455 (2) {
+      ["name"]=>
+      string(30) "Normann/Solzbacher joint proje"
+      ["type"]=>
+      string(0) ""
+    }
+    [318]=>
+    object(stdClass)#456 (2) {
+      ["name"]=>
+      string(10) "NSF Career"
+      ["type"]=>
+      string(5) "local"
+    }
+    [319]=>
+    object(stdClass)#457 (2) {
+      ["name"]=>
+      string(26) "NSF Collaborative Research"
+      ["type"]=>
+      string(5) "local"
+    }
+    [320]=>
+    object(stdClass)#458 (2) {
+      ["name"]=>
+      string(16) "Nuclear Research"
+      ["type"]=>
+      string(5) "local"
+    }
+    [321]=>
+    object(stdClass)#459 (2) {
+      ["name"]=>
+      string(14) "Ohmic Contacts"
+      ["type"]=>
+      string(0) ""
+    }
+    [322]=>
+    object(stdClass)#460 (2) {
+      ["name"]=>
+      string(13) "Ohmic Contact"
+      ["type"]=>
+      string(0) ""
+    }
+    [323]=>
+    object(stdClass)#461 (2) {
+      ["name"]=>
+      string(17) "OLED - COE: COLAP"
+      ["type"]=>
+      string(0) ""
+    }
+    [324]=>
+    object(stdClass)#462 (2) {
+      ["name"]=>
+      string(22) "On The Fly Engineering"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [325]=>
+    object(stdClass)#463 (2) {
+      ["name"]=>
+      string(29) "OPTICAL ELECTRICAL & MAGNETIC"
+      ["type"]=>
+      string(0) ""
+    }
+    [326]=>
+    object(stdClass)#464 (2) {
+      ["name"]=>
+      string(22) "Optoelectronic Sensing"
+      ["type"]=>
+      string(5) "local"
+    }
+    [327]=>
+    object(stdClass)#465 (2) {
+      ["name"]=>
+      string(30) "Ordered Pi Conjugated Polymers"
+      ["type"]=>
+      string(0) ""
+    }
+    [328]=>
+    object(stdClass)#466 (2) {
+      ["name"]=>
+      string(30) "Ordered PI- Conjugated Systems"
+      ["type"]=>
+      string(5) "local"
+    }
+    [329]=>
+    object(stdClass)#467 (2) {
+      ["name"]=>
+      string(22) "ORGANIC SEMICONDUCTORS"
+      ["type"]=>
+      string(0) ""
+    }
+    [330]=>
+    object(stdClass)#468 (2) {
+      ["name"]=>
+      string(28) "Organic Solar Cells and FETs"
+      ["type"]=>
+      string(0) ""
+    }
+    [331]=>
+    object(stdClass)#469 (2) {
+      ["name"]=>
+      string(18) "Organic Solar Cell"
+      ["type"]=>
+      string(0) ""
+    }
+    [332]=>
+    object(stdClass)#470 (2) {
+      ["name"]=>
+      string(18) "Organic Spin Valve"
+      ["type"]=>
+      string(0) ""
+    }
+    [333]=>
+    object(stdClass)#471 (2) {
+      ["name"]=>
+      string(17) "Ortho Development"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [334]=>
+    object(stdClass)#472 (2) {
+      ["name"]=>
+      string(16) "Ostafin Start Up"
+      ["type"]=>
+      string(5) "local"
+    }
+    [335]=>
+    object(stdClass)#473 (2) {
+      ["name"]=>
+      string(30) "Oxford DRIE Process Developmen"
+      ["type"]=>
+      string(0) ""
+    }
+    [336]=>
+    object(stdClass)#474 (2) {
+      ["name"]=>
+      string(26) "Particle Imaging Manometry"
+      ["type"]=>
+      string(5) "local"
+    }
+    [337]=>
+    object(stdClass)#475 (2) {
+      ["name"]=>
+      string(25) "Parylene Biocompatibility"
+      ["type"]=>
+      string(0) ""
+    }
+    [338]=>
+    object(stdClass)#476 (2) {
+      ["name"]=>
+      string(23) "P. Californica Hexagons"
+      ["type"]=>
+      string(0) ""
+    }
+    [339]=>
+    object(stdClass)#477 (2) {
+      ["name"]=>
+      string(8) "PCR Chip"
+      ["type"]=>
+      string(0) ""
+    }
+    [340]=>
+    object(stdClass)#478 (2) {
+      ["name"]=>
+      string(15) "PDL Development"
+      ["type"]=>
+      string(5) "local"
+    }
+    [341]=>
+    object(stdClass)#479 (2) {
+      ["name"]=>
+      string(12) "PDMS Spotter"
+      ["type"]=>
+      string(0) ""
+    }
+    [342]=>
+    object(stdClass)#480 (2) {
+      ["name"]=>
+      string(20) "Pease Start up Funds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [343]=>
+    object(stdClass)#481 (2) {
+      ["name"]=>
+      string(20) "Pease Start Up Funds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [344]=>
+    object(stdClass)#482 (2) {
+      ["name"]=>
+      string(21) "PECVD SiO2 Deposition"
+      ["type"]=>
+      string(0) ""
+    }
+    [345]=>
+    object(stdClass)#483 (2) {
+      ["name"]=>
+      string(24) "PEMFC Cathodes Catalysts"
+      ["type"]=>
+      string(5) "local"
+    }
+    [346]=>
+    object(stdClass)#484 (2) {
+      ["name"]=>
+      string(15) "Perovskite HTPC"
+      ["type"]=>
+      string(0) ""
+    }
+    [347]=>
+    object(stdClass)#485 (2) {
+      ["name"]=>
+      string(23) "Petroleum Research Fund"
+      ["type"]=>
+      string(0) ""
+    }
+    [348]=>
+    object(stdClass)#486 (2) {
+      ["name"]=>
+      string(28) "Photonic Crystal Engineering"
+      ["type"]=>
+      string(0) ""
+    }
+    [349]=>
+    object(stdClass)#487 (2) {
+      ["name"]=>
+      string(27) "Photonic Crystal Structures"
+      ["type"]=>
+      string(0) ""
+    }
+    [350]=>
+    object(stdClass)#488 (2) {
+      ["name"]=>
+      string(26) "Photonic Crystal Structure"
+      ["type"]=>
+      string(0) ""
+    }
+    [351]=>
+    object(stdClass)#489 (2) {
+      ["name"]=>
+      string(20) "Photonics Patterning"
+      ["type"]=>
+      string(5) "local"
+    }
+    [352]=>
+    object(stdClass)#490 (2) {
+      ["name"]=>
+      string(27) "Physics Dept Tech Operating"
+      ["type"]=>
+      string(0) ""
+    }
+    [353]=>
+    object(stdClass)#491 (2) {
+      ["name"]=>
+      string(12) "Physics Tech"
+      ["type"]=>
+      string(0) ""
+    }
+    [354]=>
+    object(stdClass)#492 (2) {
+      ["name"]=>
+      string(2) "PI"
+      ["type"]=>
+      string(5) "local"
+    }
+    [355]=>
+    object(stdClass)#493 (2) {
+      ["name"]=>
+      string(17) "Plasmonic Antenna"
+      ["type"]=>
+      string(5) "local"
+    }
+    [356]=>
+    object(stdClass)#494 (2) {
+      ["name"]=>
+      string(18) "Plasmonic Lattices"
+      ["type"]=>
+      string(0) ""
+    }
+    [357]=>
+    object(stdClass)#495 (2) {
+      ["name"]=>
+      string(29) "Plastic Prototype Development"
+      ["type"]=>
+      string(5) "local"
+    }
+    [358]=>
+    object(stdClass)#496 (2) {
+      ["name"]=>
+      string(15) "PLC Diagnostics"
+      ["type"]=>
+      string(0) ""
+    }
+    [359]=>
+    object(stdClass)#497 (2) {
+      ["name"]=>
+      string(23) "Polycrystalline Diamond"
+      ["type"]=>
+      string(0) ""
+    }
+    [360]=>
+    object(stdClass)#498 (2) {
+      ["name"]=>
+      string(25) "Polymerase Chain Reaction"
+      ["type"]=>
+      string(0) ""
+    }
+    [361]=>
+    object(stdClass)#499 (2) {
+      ["name"]=>
+      string(11) "Polymer CVD"
+      ["type"]=>
+      string(0) ""
+    }
+    [362]=>
+    object(stdClass)#500 (2) {
+      ["name"]=>
+      string(28) "Polysilicon Deposition (BYU)"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [363]=>
+    object(stdClass)#501 (2) {
+      ["name"]=>
+      string(26) "Porcupine Mimetic Adhesive"
+      ["type"]=>
+      string(0) ""
+    }
+    [364]=>
+    object(stdClass)#502 (2) {
+      ["name"]=>
+      string(25) "POROUS MEMBRANE CATHETERS"
+      ["type"]=>
+      string(5) "local"
+    }
+    [365]=>
+    object(stdClass)#503 (2) {
+      ["name"]=>
+      string(28) "Porter Group - Cancer Marker"
+      ["type"]=>
+      string(5) "local"
+    }
+    [366]=>
+    object(stdClass)#504 (2) {
+      ["name"]=>
+      string(21) "Power Scavengers 6423"
+      ["type"]=>
+      string(0) ""
+    }
+    [367]=>
+    object(stdClass)#505 (2) {
+      ["name"]=>
+      string(30) "PRECISION DESIGN LABORATORY DE"
+      ["type"]=>
+      string(0) ""
+    }
+    [368]=>
+    object(stdClass)#506 (2) {
+      ["name"]=>
+      string(30) "PREPARATION OF TITANIUM BORIDE"
+      ["type"]=>
+      string(0) ""
+    }
+    [369]=>
+    object(stdClass)#507 (2) {
+      ["name"]=>
+      string(17) "Proppant Behavior"
+      ["type"]=>
+      string(5) "local"
+    }
+    [370]=>
+    object(stdClass)#508 (2) {
+      ["name"]=>
+      string(12) "Pt Thin Film"
+      ["type"]=>
+      string(0) ""
+    }
+    [371]=>
+    object(stdClass)#509 (2) {
+      ["name"]=>
+      string(17) "Quantum Nanowires"
+      ["type"]=>
+      string(5) "local"
+    }
+    [372]=>
+    object(stdClass)#510 (2) {
+      ["name"]=>
+      string(21) "QUANTUM SPIN LATTICES"
+      ["type"]=>
+      string(0) ""
+    }
+    [373]=>
+    object(stdClass)#511 (2) {
+      ["name"]=>
+      string(17) "Quantum Transport"
+      ["type"]=>
+      string(0) ""
+    }
+    [374]=>
+    object(stdClass)#512 (2) {
+      ["name"]=>
+      string(20) "Raeymaekers Start-Up"
+      ["type"]=>
+      string(5) "local"
+    }
+    [375]=>
+    object(stdClass)#513 (2) {
+      ["name"]=>
+      string(18) "Rajesh Menon USTAR"
+      ["type"]=>
+      string(5) "local"
+    }
+    [376]=>
+    object(stdClass)#514 (2) {
+      ["name"]=>
+      string(30) "Real-Time Heteroplasma Analysi"
+      ["type"]=>
+      string(0) ""
+    }
+    [377]=>
+    object(stdClass)#515 (2) {
+      ["name"]=>
+      string(20) "Real Time Microarray"
+      ["type"]=>
+      string(0) ""
+    }
+    [378]=>
+    object(stdClass)#516 (2) {
+      ["name"]=>
+      string(28) "Real-time Nucleic Acid Array"
+      ["type"]=>
+      string(0) ""
+    }
+    [379]=>
+    object(stdClass)#517 (2) {
+      ["name"]=>
+      string(26) "RECONFIG INTERCONNECT TECH"
+      ["type"]=>
+      string(0) ""
+    }
+    [380]=>
+    object(stdClass)#518 (2) {
+      ["name"]=>
+      string(14) "Red Blood Cell"
+      ["type"]=>
+      string(0) ""
+    }
+    [381]=>
+    object(stdClass)#519 (2) {
+      ["name"]=>
+      string(15) "REI subcontract"
+      ["type"]=>
+      string(0) ""
+    }
+    [382]=>
+    object(stdClass)#520 (2) {
+      ["name"]=>
+      string(29) "Research on Particle Breakage"
+      ["type"]=>
+      string(5) "local"
+    }
+    [383]=>
+    object(stdClass)#521 (2) {
+      ["name"]=>
+      string(27) "Residual Stress Measurement"
+      ["type"]=>
+      string(0) ""
+    }
+    [384]=>
+    object(stdClass)#522 (2) {
+      ["name"]=>
+      string(20) "RESPONSIVE NANOPORES"
+      ["type"]=>
+      string(0) ""
+    }
+    [385]=>
+    object(stdClass)#523 (2) {
+      ["name"]=>
+      string(27) "Retrofit Impacts of OXY-COA"
+      ["type"]=>
+      string(5) "local"
+    }
+    [386]=>
+    object(stdClass)#524 (2) {
+      ["name"]=>
+      string(17) "Returned Overhead"
+      ["type"]=>
+      string(0) ""
+    }
+    [387]=>
+    object(stdClass)#525 (2) {
+      ["name"]=>
+      string(15) "RFID IED Sensor"
+      ["type"]=>
+      string(5) "local"
+    }
+    [388]=>
+    object(stdClass)#526 (2) {
+      ["name"]=>
+      string(22) "Richard Morrill Thesis"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [389]=>
+    object(stdClass)#527 (2) {
+      ["name"]=>
+      string(21) "Rogachev Seed Funding"
+      ["type"]=>
+      string(5) "local"
+    }
+    [390]=>
+    object(stdClass)#528 (2) {
+      ["name"]=>
+      string(23) "Rogachev Start-Up Funds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [391]=>
+    object(stdClass)#529 (2) {
+      ["name"]=>
+      string(23) "Sandal Development Fund"
+      ["type"]=>
+      string(5) "local"
+    }
+    [392]=>
+    object(stdClass)#530 (2) {
+      ["name"]=>
+      string(6) "Sarcos"
+      ["type"]=>
+      string(0) ""
+    }
+    [393]=>
+    object(stdClass)#531 (2) {
+      ["name"]=>
+      string(30) "SCALE-UP AND TEST OF BORON NPS"
+      ["type"]=>
+      string(5) "local"
+    }
+    [394]=>
+    object(stdClass)#532 (2) {
+      ["name"]=>
+      string(24) "Scarpulla Start-Up Funds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [395]=>
+    object(stdClass)#533 (2) {
+      ["name"]=>
+      string(18) "Scarpulla Start-up"
+      ["type"]=>
+      string(0) ""
+    }
+    [396]=>
+    object(stdClass)#534 (2) {
+      ["name"]=>
+      string(17) "Scientia Vascular"
+      ["type"]=>
+      string(0) ""
+    }
+    [397]=>
+    object(stdClass)#535 (2) {
+      ["name"]=>
+      string(29) "SEED FUNDING- Luciano Aguirre"
+      ["type"]=>
+      string(5) "local"
+    }
+    [398]=>
+    object(stdClass)#536 (2) {
+      ["name"]=>
+      string(22) "SEM Course Development"
+      ["type"]=>
+      string(5) "class"
+    }
+    [399]=>
+    object(stdClass)#537 (2) {
+      ["name"]=>
+      string(7) "Sensors"
+      ["type"]=>
+      string(5) "local"
+    }
+    [400]=>
+    object(stdClass)#538 (2) {
+      ["name"]=>
+      string(16) "Service Requests"
+      ["type"]=>
+      string(0) ""
+    }
+    [401]=>
+    object(stdClass)#539 (2) {
+      ["name"]=>
+      string(30) "SGER: Exploiting Anomalous Dif"
+      ["type"]=>
+      string(0) ""
+    }
+    [402]=>
+    object(stdClass)#540 (2) {
+      ["name"]=>
+      string(19) "Shape Memory Alloys"
+      ["type"]=>
+      string(0) ""
+    }
+    [403]=>
+    object(stdClass)#541 (2) {
+      ["name"]=>
+      string(29) "Shumaker-Parry Start-Up Funds"
+      ["type"]=>
+      string(5) "local"
+    }
+    [404]=>
+    object(stdClass)#542 (2) {
+      ["name"]=>
+      string(12) "SiC Contacts"
+      ["type"]=>
+      string(0) ""
+    }
+    [405]=>
+    object(stdClass)#543 (2) {
+      ["name"]=>
+      string(12) "Silicone RIE"
+      ["type"]=>
+      string(5) "local"
+    }
+    [406]=>
+    object(stdClass)#544 (2) {
+      ["name"]=>
+      string(17) "Silicon Skin Pore"
+      ["type"]=>
+      string(0) ""
+    }
+    [407]=>
+    object(stdClass)#545 (2) {
+      ["name"]=>
+      string(8) "SiN Etch"
+      ["type"]=>
+      string(0) ""
+    }
+    [408]=>
+    object(stdClass)#546 (2) {
+      ["name"]=>
+      string(13) "SiN Nanopores"
+      ["type"]=>
+      string(5) "local"
+    }
+    [409]=>
+    object(stdClass)#547 (2) {
+      ["name"]=>
+      string(25) "Sintering/Cobalt Surfaces"
+      ["type"]=>
+      string(0) ""
+    }
+    [410]=>
+    object(stdClass)#548 (2) {
+      ["name"]=>
+      string(26) "SISGR: FUNDAMENTAL STUDIES"
+      ["type"]=>
+      string(5) "local"
+    }
+    [411]=>
+    object(stdClass)#549 (2) {
+      ["name"]=>
+      string(30) "Siva Guruswamy Research Educat"
+      ["type"]=>
+      string(0) ""
+    }
+    [412]=>
+    object(stdClass)#550 (2) {
+      ["name"]=>
+      string(6) "Skliar"
+      ["type"]=>
+      string(0) ""
+    }
+    [413]=>
+    object(stdClass)#551 (2) {
+      ["name"]=>
+      string(14) "SLC Bioscience"
+      ["type"]=>
+      string(0) ""
+    }
+    [414]=>
+    object(stdClass)#552 (2) {
+      ["name"]=>
+      string(10) "Slow Light"
+      ["type"]=>
+      string(0) ""
+    }
+    [415]=>
+    object(stdClass)#553 (2) {
+      ["name"]=>
+      string(17) "Smart Pill Sensor"
+      ["type"]=>
+      string(0) ""
+    }
+    [416]=>
+    object(stdClass)#554 (2) {
+      ["name"]=>
+      string(10) "Smart Pill"
+      ["type"]=>
+      string(0) ""
+    }
+    [417]=>
+    object(stdClass)#555 (2) {
+      ["name"]=>
+      string(14) "SOFC GENERATOR"
+      ["type"]=>
+      string(0) ""
+    }
+    [418]=>
+    object(stdClass)#556 (2) {
+      ["name"]=>
+      string(21) "Solar Cell Class 2009"
+      ["type"]=>
+      string(0) ""
+    }
+    [419]=>
+    object(stdClass)#557 (2) {
+      ["name"]=>
+      string(20) "Solar Cells Antennas"
+      ["type"]=>
+      string(5) "local"
+    }
+    [420]=>
+    object(stdClass)#558 (2) {
+      ["name"]=>
+      string(18) "Soldier Navigation"
+      ["type"]=>
+      string(0) ""
+    }
+    [421]=>
+    object(stdClass)#559 (2) {
+      ["name"]=>
+      string(22) "Solid Oxide Fuel Cells"
+      ["type"]=>
+      string(0) ""
+    }
+    [422]=>
+    object(stdClass)#560 (2) {
+      ["name"]=>
+      string(21) "Solid Oxide Fuel Cell"
+      ["type"]=>
+      string(0) ""
+    }
+    [423]=>
+    object(stdClass)#561 (2) {
+      ["name"]=>
+      string(17) "Soluble Catalysts"
+      ["type"]=>
+      string(0) ""
+    }
+    [424]=>
+    object(stdClass)#562 (2) {
+      ["name"]=>
+      string(23) "Soot Optical Properties"
+      ["type"]=>
+      string(0) ""
+    }
+    [425]=>
+    object(stdClass)#563 (2) {
+      ["name"]=>
+      string(20) "South American Shale"
+      ["type"]=>
+      string(5) "local"
+    }
+    [426]=>
+    object(stdClass)#564 (2) {
+      ["name"]=>
+      string(22) "Spectroscopy Platforms"
+      ["type"]=>
+      string(5) "local"
+    }
+    [427]=>
+    object(stdClass)#565 (2) {
+      ["name"]=>
+      string(22) "SPECTROSCOPY PLATFORMS"
+      ["type"]=>
+      string(5) "local"
+    }
+    [428]=>
+    object(stdClass)#566 (2) {
+      ["name"]=>
+      string(20) "Spin Lattice Devices"
+      ["type"]=>
+      string(0) ""
+    }
+    [429]=>
+    object(stdClass)#567 (2) {
+      ["name"]=>
+      string(11) "Spin Optics"
+      ["type"]=>
+      string(0) ""
+    }
+    [430]=>
+    object(stdClass)#568 (2) {
+      ["name"]=>
+      string(23) "Spin Resonance on OLEDs"
+      ["type"]=>
+      string(0) ""
+    }
+    [431]=>
+    object(stdClass)#569 (2) {
+      ["name"]=>
+      string(8) "Spiricon"
+      ["type"]=>
+      string(0) ""
+    }
+    [432]=>
+    object(stdClass)#570 (2) {
+      ["name"]=>
+      string(20) "Stretchy Electronics"
+      ["type"]=>
+      string(0) ""
+    }
+    [433]=>
+    object(stdClass)#571 (2) {
+      ["name"]=>
+      string(19) "Structured Filament"
+      ["type"]=>
+      string(0) ""
+    }
+    [434]=>
+    object(stdClass)#572 (2) {
+      ["name"]=>
+      string(25) "Study of Ordering Systems"
+      ["type"]=>
+      string(0) ""
+    }
+    [435]=>
+    object(stdClass)#573 (2) {
+      ["name"]=>
+      string(30) "superconducting and ferromagne"
+      ["type"]=>
+      string(5) "local"
+    }
+    [436]=>
+    object(stdClass)#574 (2) {
+      ["name"]=>
+      string(16) "Surface Analysis"
+      ["type"]=>
+      string(0) ""
+    }
+    [437]=>
+    object(stdClass)#575 (2) {
+      ["name"]=>
+      string(15) "Surface Science"
+      ["type"]=>
+      string(5) "staff"
+    }
+    [438]=>
+    object(stdClass)#576 (2) {
+      ["name"]=>
+      string(10) "Surfactant"
+      ["type"]=>
+      string(0) ""
+    }
+    [439]=>
+    object(stdClass)#577 (2) {
+      ["name"]=>
+      string(32) "Suspension Ironmaking Technology"
+      ["type"]=>
+      string(5) "local"
+    }
+    [440]=>
+    object(stdClass)#578 (2) {
+      ["name"]=>
+      string(7) "Synergy"
+      ["type"]=>
+      string(0) ""
+    }
+    [441]=>
+    object(stdClass)#579 (2) {
+      ["name"]=>
+      string(19) "TA2C-TAC Composites"
+      ["type"]=>
+      string(0) ""
+    }
+    [442]=>
+    object(stdClass)#580 (2) {
+      ["name"]=>
+      string(16) "Tabib-Azar USTAR"
+      ["type"]=>
+      string(5) "local"
+    }
+    [443]=>
+    object(stdClass)#581 (2) {
+      ["name"]=>
+      string(25) "TCIP: DBS Electrode Array"
+      ["type"]=>
+      string(5) "local"
+    }
+    [444]=>
+    object(stdClass)#582 (2) {
+      ["name"]=>
+      string(11) "TCP Filters"
+      ["type"]=>
+      string(5) "local"
+    }
+    [445]=>
+    object(stdClass)#583 (2) {
+      ["name"]=>
+      string(17) "TCP Photovoltaics"
+      ["type"]=>
+      string(5) "local"
+    }
+    [446]=>
+    object(stdClass)#584 (2) {
+      ["name"]=>
+      string(13) "TDA Catalysts"
+      ["type"]=>
+      string(0) ""
+    }
+    [447]=>
+    object(stdClass)#585 (2) {
+      ["name"]=>
+      string(17) "Technical Support"
+      ["type"]=>
+      string(5) "local"
+    }
+    [448]=>
+    object(stdClass)#586 (2) {
+      ["name"]=>
+      string(22) "Temp Project for Jason"
+      ["type"]=>
+      string(5) "local"
+    }
+    [449]=>
+    object(stdClass)#587 (2) {
+      ["name"]=>
+      string(19) "Tencor Measurements"
+      ["type"]=>
+      string(0) ""
+    }
+    [450]=>
+    object(stdClass)#588 (2) {
+      ["name"]=>
+      string(22) "Terahertz Device Corp."
+      ["type"]=>
+      string(5) "local"
+    }
+    [451]=>
+    object(stdClass)#589 (2) {
+      ["name"]=>
+      string(24) "Terahertz Field Emitters"
+      ["type"]=>
+      string(0) ""
+    }
+    [452]=>
+    object(stdClass)#590 (2) {
+      ["name"]=>
+      string(25) "Terahertz Optoelectronics"
+      ["type"]=>
+      string(0) ""
+    }
+    [453]=>
+    object(stdClass)#591 (2) {
+      ["name"]=>
+      string(30) "Terahertz waveguides: Photonic"
+      ["type"]=>
+      string(0) ""
+    }
+    [454]=>
+    object(stdClass)#592 (2) {
+      ["name"]=>
+      string(22) "Terrahertz Device Corp"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [455]=>
+    object(stdClass)#593 (2) {
+      ["name"]=>
+      string(8) "TerraTek"
+      ["type"]=>
+      string(0) ""
+    }
+    [456]=>
+    object(stdClass)#594 (2) {
+      ["name"]=>
+      string(13) "Terry Ring PI"
+      ["type"]=>
+      string(0) ""
+    }
+    [457]=>
+    object(stdClass)#595 (2) {
+      ["name"]=>
+      string(11) "test_edates"
+      ["type"]=>
+      string(5) "local"
+    }
+    [458]=>
+    object(stdClass)#596 (2) {
+      ["name"]=>
+      string(12) "TestProjectA"
+      ["type"]=>
+      string(0) ""
+    }
+    [459]=>
+    object(stdClass)#597 (2) {
+      ["name"]=>
+      string(12) "TestProjectB"
+      ["type"]=>
+      string(0) ""
+    }
+    [460]=>
+    object(stdClass)#598 (2) {
+      ["name"]=>
+      string(12) "TEST Project"
+      ["type"]=>
+      string(0) ""
+    }
+    [461]=>
+    object(stdClass)#599 (2) {
+      ["name"]=>
+      string(4) "Test"
+      ["type"]=>
+      string(0) ""
+    }
+    [462]=>
+    object(stdClass)#600 (2) {
+      ["name"]=>
+      string(21) "Thin Film Fabrication"
+      ["type"]=>
+      string(0) ""
+    }
+    [463]=>
+    object(stdClass)#601 (2) {
+      ["name"]=>
+      string(30) "Thin Film Thickness Measuremen"
+      ["type"]=>
+      string(0) ""
+    }
+    [464]=>
+    object(stdClass)#602 (2) {
+      ["name"]=>
+      string(22) "three electrode system"
+      ["type"]=>
+      string(0) ""
+    }
+    [465]=>
+    object(stdClass)#603 (2) {
+      ["name"]=>
+      string(21) "TIB SURFACE HARDENING"
+      ["type"]=>
+      string(0) ""
+    }
+    [466]=>
+    object(stdClass)#604 (2) {
+      ["name"]=>
+      string(15) "TIO2 Nano-Wells"
+      ["type"]=>
+      string(0) ""
+    }
+    [467]=>
+    object(stdClass)#605 (2) {
+      ["name"]=>
+      string(22) "Titanium Dioxide Match"
+      ["type"]=>
+      string(5) "local"
+    }
+    [468]=>
+    object(stdClass)#606 (2) {
+      ["name"]=>
+      string(16) "TITANIUM DIOXIDE"
+      ["type"]=>
+      string(0) ""
+    }
+    [469]=>
+    object(stdClass)#607 (2) {
+      ["name"]=>
+      string(23) "Titanium Disk Profiling"
+      ["type"]=>
+      string(0) ""
+    }
+    [470]=>
+    object(stdClass)#608 (2) {
+      ["name"]=>
+      string(7) "Trainer"
+      ["type"]=>
+      string(0) ""
+    }
+    [471]=>
+    object(stdClass)#609 (2) {
+      ["name"]=>
+      string(30) "Transparent Antennas for Small"
+      ["type"]=>
+      string(0) ""
+    }
+    [472]=>
+    object(stdClass)#610 (2) {
+      ["name"]=>
+      string(30) "Transport in Supercond. (Rogac"
+      ["type"]=>
+      string(5) "local"
+    }
+    [473]=>
+    object(stdClass)#611 (2) {
+      ["name"]=>
+      string(13) "Tungsten Etch"
+      ["type"]=>
+      string(0) ""
+    }
+    [474]=>
+    object(stdClass)#612 (2) {
+      ["name"]=>
+      string(12) "UDAT Project"
+      ["type"]=>
+      string(0) ""
+    }
+    [475]=>
+    object(stdClass)#613 (2) {
+      ["name"]=>
+      string(13) "Ultrafast STM"
+      ["type"]=>
+      string(5) "local"
+    }
+    [476]=>
+    object(stdClass)#614 (2) {
+      ["name"]=>
+      string(13) "University TA"
+      ["type"]=>
+      string(0) ""
+    }
+    [477]=>
+    object(stdClass)#615 (2) {
+      ["name"]=>
+      string(22) "U of U Sensors Project"
+      ["type"]=>
+      string(0) ""
+    }
+    [478]=>
+    object(stdClass)#616 (2) {
+      ["name"]=>
+      string(13) "User Training"
+      ["type"]=>
+      string(5) "staff"
+    }
+    [479]=>
+    object(stdClass)#617 (2) {
+      ["name"]=>
+      string(17) "USTAR: Ghandehari"
+      ["type"]=>
+      string(0) ""
+    }
+    [480]=>
+    object(stdClass)#618 (2) {
+      ["name"]=>
+      string(18) "USTAR- Marc Porter"
+      ["type"]=>
+      string(5) "local"
+    }
+    [481]=>
+    object(stdClass)#619 (2) {
+      ["name"]=>
+      string(16) "USU- Anhong Zhou"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [482]=>
+    object(stdClass)#620 (2) {
+      ["name"]=>
+      string(24) "USU Microelectrode Array"
+      ["type"]=>
+      string(0) ""
+    }
+    [483]=>
+    object(stdClass)#621 (2) {
+      ["name"]=>
+      string(8) "USU-Yang"
+      ["type"]=>
+      string(10) "off campus"
+    }
+    [484]=>
+    object(stdClass)#622 (2) {
+      ["name"]=>
+      string(30) "Utah Clean Coal Center - Gasif"
+      ["type"]=>
+      string(0) ""
+    }
+    [485]=>
+    object(stdClass)#623 (2) {
+      ["name"]=>
+      string(16) "Vacuum Micropump"
+      ["type"]=>
+      string(5) "local"
+    }
+    [486]=>
+    object(stdClass)#624 (2) {
+      ["name"]=>
+      string(17) "Vocal Fold Matrix"
+      ["type"]=>
+      string(0) ""
+    }
+    [487]=>
+    object(stdClass)#625 (2) {
+      ["name"]=>
+      string(15) "Waveguide Laser"
+      ["type"]=>
+      string(0) ""
+    }
+    [488]=>
+    object(stdClass)#626 (2) {
+      ["name"]=>
+      string(16) "WAVE GUIDE LASER"
+      ["type"]=>
+      string(0) ""
+    }
+    [489]=>
+    object(stdClass)#627 (2) {
+      ["name"]=>
+      string(21) "Wayne Wingert/Physics"
+      ["type"]=>
+      string(0) ""
+    }
+    [490]=>
+    object(stdClass)#628 (2) {
+      ["name"]=>
+      string(19) "Willie Dissertation"
+      ["type"]=>
+      string(0) ""
+    }
+    [491]=>
+    object(stdClass)#629 (2) {
+      ["name"]=>
+      string(28) "Wire EDM of High Resistivity"
+      ["type"]=>
+      string(0) ""
+    }
+    [492]=>
+    object(stdClass)#630 (2) {
+      ["name"]=>
+      string(12) "Wollastonite"
+      ["type"]=>
+      string(5) "local"
+    }
+  }
+}
